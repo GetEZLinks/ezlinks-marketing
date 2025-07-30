@@ -7,6 +7,7 @@ import QRSection from '@/components/Developer/QRSection';
 import AnalyticsSection from '@/components/Developer/AnalyticsSection';
 import CTA from '@/components/CTA/CTA';
 import Footer from '@/components/Footer/Footer';
+import SDKSection from '@/components/SDKSection/SDKSection';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <DeveloperSection />
       <QRSection />
       <AnalyticsSection />
+      <SDKSection />
       <CTA />
       <Footer/>
     </main>
