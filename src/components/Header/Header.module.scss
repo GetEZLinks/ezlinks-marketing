@@ -1,0 +1,55 @@
+// src/components/Header/Header.module.scss
+@import '../../styles/variables.scss';
+
+.header {
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--woodsmoke-100);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--woodsmoke-950);
+}
+
+.logoIcon {
+  font-size: 1.25rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  a {
+    color: var(--woodsmoke-700);
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--woodsmoke-950);
+    }
+  }
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+    
+    a:not(.btn) {
+      display: none;
+    }
+  }
+}
