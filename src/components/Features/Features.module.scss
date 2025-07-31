@@ -55,7 +55,7 @@
 .featuresGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 6px;
+  gap: 8px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -67,7 +67,6 @@
   background: var(--bg-primary);
   padding: 24px;
   border-radius: 12px;
-  border: 1px solid var(--woodsmoke-100);
   transition: all 0.3s ease;
   cursor: pointer;
 
@@ -78,7 +77,7 @@
 }
 
 .featureIcon {
-  font-size: 2rem;
+  font-size: 24px;
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
