@@ -12,6 +12,7 @@ import PricingSection from '@/components/PricingSection/PricingSection';
 import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSection';
 import CaseStudySection from '@/components/CaseStudy/CaseStudy';
 import AttributionFlowSection from '@/components/AttributionFlow/AttributionFlowSection';
+import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
 
 
 export default function Home() {
@@ -27,7 +28,8 @@ export default function Home() {
       <SDKSection />
 
       <ArchitectureSection />
-      <CaseStudySection/>
+      <CaseStudySection />
+      <AIFeaturesSection />
       <PricingSection />
       <CTA />
       <Footer/>
