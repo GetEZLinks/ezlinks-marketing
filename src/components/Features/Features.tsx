@@ -16,7 +16,7 @@ const features = [
   {
     icon: '📊',
     title: 'Real-time Attribution',
-    description: 'Your deep links work permanently. No link rot, no expired URLs, no broken user experiences.'
+    description: 'Real-time vs batch: See conversions as they happen, not hours later. Make decisions on live data, not yesterday\'s reports'
   },
   {
     icon: '📈',
@@ -26,12 +26,12 @@ const features = [
   {
     icon: '🔧',
     title: 'Microservices Built to scale',
-    description: 'Deployed as independent microservices. Each component scales separately for reliability.'
+    description: 'Modular stack means you only pay for what you use. Add features without rebuilding. Scale components independently.'
   },
   {
     icon: '🌍',
     title: 'Edge deployment',
-    description: 'Deployed on Fly.io edge nodes. Sub-50ms response times worldwide.'
+    description: 'Edge routing means your users convert before they bounce. Every 100ms delay costs 1% conversion rate.'
   }
 ];
 
@@ -48,7 +48,7 @@ export default function Features() {
         >
           <p className={styles.sectionLabel}>FEATURES</p>
           <h2 className={styles.title}>
-            Built for Fast Launches and Real Growth
+            Fast Launches and Real Growth
           </h2>
           <p className={styles.subtitle}>
             With EZLinks, we are creating attribution tracking with an unrivalled developer experience. EZLinks is optimized for simplicity, speed, and getting real insights.

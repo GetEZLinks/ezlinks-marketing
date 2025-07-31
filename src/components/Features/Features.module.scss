@@ -55,17 +55,17 @@
 .featuresGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: 6px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }
 
 .featureCard {
   background: var(--bg-primary);
-  padding: 2rem;
+  padding: 24px;
   border-radius: 12px;
   border: 1px solid var(--woodsmoke-100);
   transition: all 0.3s ease;
@@ -97,4 +97,6 @@
   color: var(--woodsmoke-600);
   line-height: 1.6;
   font-size: 0.95rem;
+  font-weight: 500;
+  // opacity: 0.95;
 }

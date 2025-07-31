@@ -10,6 +10,7 @@ import Footer from '@/components/Footer/Footer';
 import SDKSection from '@/components/SDKSection/SDKSection';
 import PricingSection from '@/components/PricingSection/PricingSection';
 import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSection';
+import CaseStudySection from '@/components/CaseStudy/CaseStudy';
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <AnalyticsSection />
       <SDKSection />
       <ArchitectureSection />
+      <CaseStudySection/>
       <PricingSection />
       <CTA />
       <Footer/>
