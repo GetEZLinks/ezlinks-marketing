@@ -126,9 +126,9 @@
 }
 
 .featureCard {
-  text-align: center;
+  text-align: left;
   padding: 2rem 1.5rem;
-  background: var(--bg-secondary);
+  // background: var(--bg-secondary);
   border-radius: 12px;
   border: 1px solid var(--woodsmoke-100);
   transition: all 0.3s ease;
@@ -145,7 +145,7 @@
 }
 
 .featureIcon {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   display: block;
 

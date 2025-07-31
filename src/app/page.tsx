@@ -9,6 +9,7 @@ import CTA from '@/components/CTA/CTA';
 import Footer from '@/components/Footer/Footer';
 import SDKSection from '@/components/SDKSection/SDKSection';
 import PricingSection from '@/components/PricingSection/PricingSection';
+import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSection';
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <QRSection />
       <AnalyticsSection />
       <SDKSection />
+      <ArchitectureSection />
       <PricingSection />
       <CTA />
       <Footer/>
