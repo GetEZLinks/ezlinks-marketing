@@ -94,7 +94,7 @@ export default function SDKSection() {
           >
             <div className={styles.phoneMockup}>
               <Image
-                src="/phone-qr-demo.png"
+                src="/playsquares-qr-demo.png"
                 alt="EZLinks Mobile SDK Demo"
                 width={800}
                 height={800}

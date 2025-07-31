@@ -16,7 +16,7 @@ const caseStudyFeatures = [
     id: 'scan',
     title: 'Scan-to-Join Magic',
     description: 'QRs work instantly at real-world events — just scan and you\'re in the game.',
-    imageSrc: '/playsquares-qr.png',
+    imageSrc: '/playsquares-qr-demo.png',
     imageAlt: 'PlaySquares QR code scanning experience'
   },
   {
@@ -107,22 +107,6 @@ export default function CaseStudySection() {
                   height={600}
                   className={styles.phoneImage}
                 />
-                <div className={styles.phonePlaceholder}>
-                  <div className={styles.phoneFrame}>
-                    <div className={styles.phoneScreen}>
-                      <div className={styles.phoneHeader}>
-                        <span>3:41</span>
-                        <div className={styles.phoneIcons}>📶 📶 🔋</div>
-                      </div>
-                      <div className={styles.phoneContent}>
-                        <div className={styles.placeholderContent}>
-                          <h4>{currentFeature.title}</h4>
-                          <p>Replace with {currentFeature.imageSrc}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </motion.div>
             </div>
           </motion.div>
