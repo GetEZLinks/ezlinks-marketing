@@ -19,7 +19,7 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            <code>// Open-core alternative built by developers for developers</code>
+            <code>Open-core alternative built by developers for developers</code>
           </p>
           
           <div className={styles.cta}>

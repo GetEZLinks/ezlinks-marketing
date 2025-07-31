@@ -125,7 +125,7 @@ export default function PricingSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p>Need something custom? <a href="#contact">Let's talk</a></p>
+          <p>Need something custom? <a href="#contact">Let&apos;s talk</a></p>
         </motion.div>
       </div>
     </section>

@@ -4,14 +4,16 @@ import { useState } from 'react';
 import Image from 'next/image';
 import styles from './SDKSection.module.scss';
 
-const platforms = [
+type Platform = 'swift' | 'android' | 'react' | 'flutter';
+
+const platforms: Array<{id: Platform, label: string, icon: string}> = [
   { id: 'swift', label: 'Swift', icon: '🍎' },
   { id: 'android', label: 'Android', icon: '🤖' },
   { id: 'react', label: 'React Native', icon: '⚛️' },
   { id: 'flutter', label: 'Flutter', icon: '🦄' }
 ];
 
-const codeExamples = {
+const codeExamples: Record<Platform, string> = {
   swift: `<import EZLinks>
 
 @UIApplicationMain
@@ -61,7 +63,7 @@ void main() async {
 };
 
 export default function SDKSection() {
-  const [activePlatform, setActivePlatform] = useState('swift');
+  const [activePlatform, setActivePlatform] = useState<Platform>('swift');
 
   return (
     <section className={styles.sdkSection}>
