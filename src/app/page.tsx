@@ -11,6 +11,7 @@ import SDKSection from '@/components/SDKSection/SDKSection';
 import PricingSection from '@/components/PricingSection/PricingSection';
 import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSection';
 import CaseStudySection from '@/components/CaseStudy/CaseStudy';
+import AttributionFlowSection from '@/components/AttributionFlow/AttributionFlowSection';
 
 
 export default function Home() {
@@ -20,9 +21,11 @@ export default function Home() {
       <Hero />
       <Features />
       <DeveloperSection />
+      <AttributionFlowSection />
       <QRSection />
       <AnalyticsSection />
       <SDKSection />
+
       <ArchitectureSection />
       <CaseStudySection/>
       <PricingSection />
