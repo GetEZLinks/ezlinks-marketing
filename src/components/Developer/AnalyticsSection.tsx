@@ -75,8 +75,8 @@ export default function AnalyticsSection() {
           >
             <div className={styles.chartPlaceholder}>
               <Image
-                src="/platform-breakdown.png"
-                alt="Platform Breakdown Chart"
+                src="/sources-breakdown.png"
+                alt="Sources Breakdown Chart"
                 width={500}
                 height={300}
                 className={styles.chartImage}
