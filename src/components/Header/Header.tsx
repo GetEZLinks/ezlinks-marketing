@@ -2,6 +2,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Header.module.scss';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -14,8 +15,12 @@ export default function Header() {
       <div className="container">
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <span className={styles.logoIcon}>⚡</span>
-            EZLinks
+            <Image
+              src="/ezlinks-logo.svg"
+              alt='EZLinks logo'
+              height={32}
+              width={125}
+            />
           </div>
           
           <div className={styles.navLinks}>

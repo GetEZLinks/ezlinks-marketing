@@ -1,4 +1,5 @@
 import styles from './Footer.module.scss';
+import Image from 'next/image';
 
 const footerLinks = {
   Product: [
@@ -29,8 +30,12 @@ export default function Footer() {
         <div className={styles.footerContent}>
           <div className={styles.footerBrand}>
             <div className={styles.logo}>
-              <span className={styles.logoIcon}>⚡</span>
-              EZLinks
+              <Image
+                  src="/ezlinks-logo.svg"
+                  alt='EZLinks logo'
+                  height={32}
+                  width={125}
+                />
             </div>
             <p className={styles.tagline}>Your OS for User Growth</p>
           </div>
