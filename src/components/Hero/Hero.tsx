@@ -53,7 +53,7 @@ export default function Hero() {
               src="/ezlinks-dash.jpg"
               alt="EZLinks Analytics Dashboard"
               width={900}
-              height={563}
+              height={0}
               priority
               className={styles.dashboardImage}
             />

@@ -21,10 +21,11 @@
 
 .title {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--woodsmoke-950);
   line-height: 1.1;
   margin-bottom: 1.5rem;
+  letter-spacing: -1px;
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
@@ -76,6 +77,11 @@
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--woodsmoke-100);
+
+  img {
+    max-width: 900px;
+    height: auto;
+  }
 }
 
 .dashboardPlaceholder {
