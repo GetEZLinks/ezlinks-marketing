@@ -1,25 +1,31 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './AIFeaturesSection.module.scss';
+import Image from 'next/image';
+
+import AIIcon from '../../../public/icons/ai-logic-engine.svg';
+import VersionedLinks from '../../../public/icons/versioned-links.svg';
+import CampaignsIcon from '../../../public/icons/campaigns.svg';
+import FlowBuilderIcon from '../../../public/icons/bolt.svg';
 
 const aiFeatures = [
   {
-    icon: '🧠',
+    icon: AIIcon,
     title: 'AI Logic Engine',
     description: 'Smart routing based on user context and behavior patterns'
   },
   {
-    icon: '🔗',
+    icon: VersionedLinks,
     title: 'Link Versioning',
     description: 'Proper version control for links with rollback capabilities'
   },
   {
-    icon: '📊',
+    icon: CampaignsIcon,
     title: 'Campaign Management',
     description: 'End-to-end campaign lifecycle with automated optimization'
   },
   {
-    icon: '⚡',
+    icon: FlowBuilderIcon,
     title: 'AI Flow Builder',
     description: 'Visual automation for complex attribution workflows'
   }
@@ -60,7 +66,13 @@ export default function AIFeaturesSection() {
               viewport={{ once: true }}
             >
               <div className={styles.featureIcon}>
-                {feature.icon}
+                <Image
+                  src={feature.icon}
+                  alt=''
+                  height={24}
+                  width={24}
+                />
+
               </div>
               <h3 className={styles.featureTitle}>
                 {feature.title}

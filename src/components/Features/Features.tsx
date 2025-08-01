@@ -4,7 +4,7 @@ import styles from './Features.module.scss';
 import Image from 'next/image';
 
 import DeepLinksIcon from '../../../public/icons/deep-links.svg';
-import APIIcon from '../../../public/icons/one-api.svg';
+import APIIcon from '../../../public/icons/source-code.svg';
 import AttributionIcon from '../../../public/icons/rta.svg';
 import AnalyticsIcon from '../../../public/icons/analytics.svg';
 import MicroservicesIcon from '../../../public/icons/microservices.svg';
@@ -78,8 +78,8 @@ export default function Features() {
                 <Image
                   src={feature.icon}
                   alt=""
-                  height={32}
-                  width={32}
+                  height={28}
+                  width={28}
                 />
               </div>
               <h3 className={styles.featureTitle}>
