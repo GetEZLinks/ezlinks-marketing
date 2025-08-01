@@ -80,7 +80,7 @@ export default function CaseStudySection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <h3 className={styles.featureTitle}>{currentFeature.title}</h3>
+              {/* <h3 className={styles.featureTitle}>{currentFeature.title}</h3> */}
               <p className={styles.featureDescription}>{currentFeature.description}</p>
             </motion.div>
           </motion.div>
