@@ -4,9 +4,14 @@ import { useState } from 'react';
 import Image from 'next/image';
 import styles from './CaseStudySection.module.scss';
 
+import ShareIcon from '../../../public/icons/share.svg';
+import QRCodeIcon from '../../../public/icons/qr-code.svg';
+import OnboardIcon from '../../../public/icons/onboard.svg';
+
 const caseStudyFeatures = [
   {
     id: 'share',
+    icon: ShareIcon,
     title: 'Share with a Tap',
     description: 'Dynamic invite links and QR codes that drop users right into the app — no friction, no signups.',
     imageSrc: '/playsquares-share.png',
@@ -14,6 +19,7 @@ const caseStudyFeatures = [
   },
   {
     id: 'scan',
+    icon: QRCodeIcon,
     title: 'Scan-to-Join Magic',
     description: 'QRs work instantly at real-world events — just scan and you\'re in the game.',
     imageSrc: '/playsquares-qr-demo.png',
@@ -21,6 +27,7 @@ const caseStudyFeatures = [
   },
   {
     id: 'landing',
+    icon: OnboardIcon,
     title: 'Personalized Landing',
     description: 'Deep links preload context — users land on the right board, with no confusion.',
     imageSrc: '/playsquares-board.png',
@@ -68,7 +75,15 @@ export default function CaseStudySection() {
                   }`}
                   onClick={() => setActiveFeature(feature.id)}
                 >
-                  {feature.title}
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>  
+                    {feature.title}
+                    <Image
+                      src={feature.icon}
+                      alt=''
+                      height={24}
+                      width={24}
+                    />
+                  </div>
                 </button>
               ))}
             </div>
