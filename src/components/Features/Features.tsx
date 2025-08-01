@@ -1,35 +1,43 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './Features.module.scss';
+import Image from 'next/image';
+
+import DeepLinksIcon from '../../../public/icons/deep-links.svg';
+import APIIcon from '../../../public/icons/one-api.svg';
+import AttributionIcon from '../../../public/icons/rta.svg';
+import AnalyticsIcon from '../../../public/icons/analytics.svg';
+import MicroservicesIcon from '../../../public/icons/microservices.svg';
+import EdgeDeployementIcon from '../../../public/icons/edge-deploy.svg';
 
 const features = [
   {
-    icon: '🔗',
+    icon: DeepLinksIcon,
     title: 'Forever links',
     description: 'Your deep links work permanently. No link rot, no expired URLs, no broken user experiences.'
   },
   {
-    icon: '⚡',
+    icon: APIIcon,
     title: 'One API, Full Stack',
     description: 'Complete attribution for iOS, Android, and Web. No need to integrate Branch + PostHog + separate attribution service.'
   },
   {
-    icon: '📊',
+    icon: AttributionIcon,
     title: 'Real-time Attribution',
     description: 'Real-time vs batch: See conversions as they happen, not hours later. Make decisions on live data, not yesterday\'s reports'
   },
   {
-    icon: '📈',
+    icon: AnalyticsIcon,
     title: 'Clean analytics',
     description: 'See what matters Simple dashboard showing where users actually come from.'
   },
   {
-    icon: '🔧',
+    icon: MicroservicesIcon,
     title: 'Microservices Built to scale',
     description: 'Modular stack means you only pay for what you use. Add features without rebuilding. Scale components independently.'
   },
   {
-    icon: '🌍',
+    icon: EdgeDeployementIcon,
     title: 'Edge deployment',
     description: 'Edge routing means your users convert before they bounce. Every 100ms delay costs 1% conversion rate.'
   }
@@ -67,7 +75,12 @@ export default function Features() {
               whileHover={{ y: -4 }}
             >
               <div className={styles.featureIcon}>
-                {feature.icon}
+                <Image
+                  src={feature.icon}
+                  alt=""
+                  height={32}
+                  width={32}
+                />
               </div>
               <h3 className={styles.featureTitle}>
                 {feature.title}
