@@ -3,24 +3,30 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './AnalyticsSection.module.scss';
 
+
+import TimeSeriesIcon from '../../../public/icons/time-series-logging.svg';
+import SourcesIcon from '../../../public/icons/source-attribution.svg';
+import DeviceFingerPrintingIcon from '../../../public/icons/device-fingerprinting.svg';
+import BehaviorCaptureIcon from '../../../public/icons/behavior-capture.svg';
+
 const analyticsFeatures = [
   {
-    icon: '📊',
+    icon: TimeSeriesIcon,
     title: 'Time-series logging',
     description: 'Log user events with millisecond accuracy'
   },
   {
-    icon: '🎯',
+    icon: SourcesIcon,
     title: 'Source attribution',
     description: 'Aggregate across campaigns, platforms, and channels'
   },
   {
-    icon: '🔗',
+    icon: DeviceFingerPrintingIcon,
     title: 'Device fingerprinting',
     description: 'Experience smarter routing and retention tracking'
   },
   {
-    icon: '👆',
+    icon: BehaviorCaptureIcon,
     title: 'Behavior capture',
     description: 'Easily track CTR, app opens, and conversion trends'
   }
@@ -97,7 +103,12 @@ export default function AnalyticsSection() {
               viewport={{ once: true }}
             >
               <div className={styles.featureIcon}>
-                {feature.icon}
+                <Image
+                  src={feature.icon}
+                  alt=""
+                  height={24}
+                  width={24}
+                />
               </div>
               <h4 className={styles.featureTitle}>
                 {feature.title}
