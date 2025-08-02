@@ -75,7 +75,7 @@ export default function CaseStudySection() {
                   }`}
                   onClick={() => setActiveFeature(feature.id)}
                 >
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>  
+                  <div className={styles.buttonStyle}>  
                     {feature.title}
                     <Image
                       src={feature.icon}
