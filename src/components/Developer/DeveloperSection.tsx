@@ -2,6 +2,9 @@
 import { motion } from 'framer-motion';
 import styles from './DeveloperSection.module.scss';
 
+import Image from 'next/image';
+import CheckIcon from '../../../public/icons/checkmark.svg';
+
 const codeExamples = [
   {
     title: 'Links That Actually Work',
@@ -71,6 +74,12 @@ export default function DeveloperSection() {
               viewport={{ once: true }}
             >
               <div className={styles.exampleContent}>
+                <Image
+                  src={CheckIcon}
+                  alt=''
+                  height={24}
+                  width={24}
+                />
                 <h4 className={styles.exampleTitle}>{example.title}</h4>
                 <p className={styles.exampleDescription}>{example.description}</p>
               </div>

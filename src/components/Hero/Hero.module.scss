@@ -79,8 +79,9 @@
   border: 1px solid var(--woodsmoke-100);
 
   img {
-    max-width: 900px;
+    width: 900px;
     height: auto;
+    max-width: 100%;
   }
 }
 

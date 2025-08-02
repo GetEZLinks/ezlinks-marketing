@@ -2,6 +2,10 @@
 import { motion } from 'framer-motion';
 import styles from './CTA.module.scss';
 
+import Image from 'next/image';
+import CheckIcon from '../../../public/icons/checkmark.svg';
+
+
 export default function CTA() {
   return (
     <section className={styles.cta}>
@@ -32,15 +36,36 @@ export default function CTA() {
           
           <div className={styles.ctaFeatures}>
             <div className={styles.feature}>
-              <span className={styles.checkmark}>✓</span>
+              <span className={styles.checkmark}>
+                <Image
+                  src={CheckIcon}
+                  alt=''
+                  height={20}
+                  width={20}
+                />
+              </span>
               <span>No credit card required</span>
             </div>
             <div className={styles.feature}>
-              <span className={styles.checkmark}>✓</span>
+              <span className={styles.checkmark}>
+                <Image
+                  src={CheckIcon}
+                  alt=''
+                  height={20}
+                  width={20}
+                />
+              </span>
               <span>5-minute setup</span>
             </div>
             <div className={styles.feature}>
-              <span className={styles.checkmark}>✓</span>
+              <span className={styles.checkmark}>
+                <Image
+                  src={CheckIcon}
+                  alt=''
+                  height={20}
+                  width={20}
+                />
+              </span>
               <span>Full API access</span>
             </div>
           </div>
