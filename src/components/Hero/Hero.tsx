@@ -50,7 +50,7 @@ export default function Hero() {
         >
           <div className={styles.dashboardContainer}>
             <Image
-              src="/ezlinks-dash.jpg"
+              src="/ezlinks-dash.png"
               alt="EZLinks Analytics Dashboard"
               width={900}
               height={0}
