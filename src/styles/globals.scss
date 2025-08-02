@@ -1,7 +1,7 @@
 
 // src/styles/globals.scss
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&display=swap');
 @import './variables.scss';
 
 * {
@@ -72,8 +72,8 @@ code {
 
   &.secondary {
     background: transparent;
-    color: var(--woodsmoke-900);
-    border: 1px solid var(--woodsmoke-200);
+    color: var(--woodsmoke-950);
+    border: 2px solid var(--woodsmoke-950);
 
     &:hover {
       border-color: var(--woodsmoke-300);
