@@ -1,7 +1,6 @@
-
 // src/styles/globals.scss
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&display=swap');
 @import './variables.scss';
 
 * {
@@ -46,6 +45,16 @@ code {
     padding: 0 1rem;
   }
 }
+
+  h1, 
+  h2 {
+    letter-spacing: -1.25px;
+    font-weight: 800 !important;
+  }
+
+  h3 {
+    letter-spacing: -0.5px;
+  }
 
 .btn {
   display: inline-flex;

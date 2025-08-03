@@ -54,12 +54,16 @@
 .caseStudyContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 1rem;
   align-items: center;
+  padding: 24px;
+  background: var(--purple-50);
+  border-radius: 24px;
 
   @media (max-width: 968px) {
     grid-template-columns: 0.75fr 1fr;
-    gap: 8px
+    gap: 8px;
+    padding: 16px 10px;
   }
 }
 

@@ -1,6 +1,6 @@
 
 .architectureSection {
-  background: var(--woodsmoke-100);
+  background: var(--bg-secondary);
   padding: 6rem 0;
 
   @media (max-width: 768px) {
@@ -199,7 +199,7 @@
 
 .componentCard {
   background: var(--woodsmoke-100);
-  border: 1px solid var(--woodsmoke-300);
+  // border: 1px solid var(--woodsmoke-300);
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;

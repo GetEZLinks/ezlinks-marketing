@@ -110,9 +110,9 @@ export default function AnalyticsSection() {
                   width={24}
                 />
               </div>
-              <h4 className={styles.featureTitle}>
+              <h3 className={styles.featureTitle}>
                 {feature.title}
-              </h4>
+              </h3>
               <p className={styles.featureDescription}>
                 {feature.description}
               </p>

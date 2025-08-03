@@ -1,16 +1,20 @@
 .qrSection {
   // background: var(--bg-secondary);
   padding: 4rem 0;
-
+  
   @media (max-width: 768px) {
     padding: 3rem 0;
   }
 }
+.qrSection :global(.container) {
+    max-width: 1000px;  
+  }
+  
 
 .qrContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 1rem;
   align-items: flex-start;
 
   @media (max-width: 968px) {
@@ -74,10 +78,10 @@
 }
 
 .activityFeed {
-  background: var(--bg-primary);
+  background: var(--woodsmoke-50);
   border-radius: 12px;
   padding: 1.5rem;
-  border: 1px solid var(--woodsmoke-100);
+  // border: 1px solid var(--woodsmoke-100);
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
