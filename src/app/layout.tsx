@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from '@/hooks/useTheme';
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "../styles/globals.scss";
 
@@ -27,7 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${jetBrainsMono.variable}`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

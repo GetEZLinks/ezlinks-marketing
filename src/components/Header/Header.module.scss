@@ -1,12 +1,28 @@
 // src/components/Header/Header.module.scss
 
 .header {
-  background: var(--bg-primary);
-  border-bottom: 1px solid var(--woodsmoke-100);
-  position: sticky;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--border-color);
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  backdrop-filter: blur(8px);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  transition: all 0.3s ease;
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .element {
+    /* Modern browsers */
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+[data-theme="dark"] .header {
+  background: rgba(12, 12, 12, 0.85);
 }
 
 .nav {
@@ -22,7 +38,7 @@
   gap: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
-  color: var(--woodsmoke-950);
+  color: var(--foreground);
 }
 
 .logoIcon {
@@ -35,12 +51,13 @@
   gap: 2rem;
 
   a {
-    color: var(--woodsmoke-700);
+    color: var(--foreground);
     font-weight: 500;
     transition: color 0.2s ease;
+    opacity: 0.8;
 
     &:hover {
-      color: var(--woodsmoke-950);
+      opacity: 1;
     }
   }
 

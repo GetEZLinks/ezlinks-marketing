@@ -1,8 +1,8 @@
-// src/components/Header/Header.tsx
+// src/components/Header/Header.tsx (Updated)
 'use client';
 import { motion } from 'framer-motion';
+import ThemeToggle from '@/components/ThemeToggle/ThemeToggle';
 import styles from './Header.module.scss';
-import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -15,18 +15,15 @@ export default function Header() {
       <div className="container">
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <Image
-              src="/ezlinks-logo.svg"
-              alt='EZLinks logo'
-              height={32}
-              width={125}
-            />
+            <span className={styles.logoIcon}>⚡</span>
+            EZLinks
           </div>
           
           <div className={styles.navLinks}>
             <a href="#docs">Documentation</a>
             <a href="#pricing">Pricing</a>
             <a href="#github">GitHub</a>
+            <ThemeToggle />
             <a href="#dashboard" className="btn secondary">Dashboard</a>
           </div>
         </nav>
