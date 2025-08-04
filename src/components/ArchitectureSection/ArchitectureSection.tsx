@@ -56,7 +56,7 @@ export default function ArchitectureSection() {
           >
             <p className={styles.sectionLabel}>EZLinks Platform</p>
             <h2 className={styles.title}>
-              <span style={{ opacity: 0.3, display: "block", fontWeight: 900, letterSpacing: "-1.5px" }} >Modern Infrastructure.</span>
+              <span>Modern Infrastructure.</span>
               No Bloat. Built for AI.
             </h2>
             <p className={styles.description}>
