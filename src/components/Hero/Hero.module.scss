@@ -80,6 +80,8 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   // border: 1px solid var(--woodsmoke-100);
 
+  filter: var(--image-filter);
+  
   img {
     width: 900px;
     height: auto;
