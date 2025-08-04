@@ -13,6 +13,7 @@ import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSe
 import CaseStudySection from '@/components/CaseStudy/CaseStudy';
 import AttributionFlowSection from '@/components/AttributionFlow/AttributionFlowSection';
 import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
+import UseCases from '@/components/UseCases/UseCases';
 
 
 export default function Home() {
@@ -26,8 +27,8 @@ export default function Home() {
       <QRSection />
       <AnalyticsSection />
       <SDKSection />
-
       <ArchitectureSection />
+      <UseCases />
       <CaseStudySection />
       <AIFeaturesSection />
       <PricingSection />
