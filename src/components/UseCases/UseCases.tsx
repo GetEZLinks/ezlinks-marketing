@@ -191,12 +191,12 @@ const UseCases: React.FC = () => {
               >
                 <div className={styles.overlay}>
                   <div className={styles.icon}>{useCase.icon}</div>
-                  <h3 className={styles.cardTitle}>{useCase.title}</h3>
-                  <p className={styles.cardSubtitle}>{useCase.subtitle}</p>
                 </div>
               </div>
               
               <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>{useCase.title}</h3>
+                <p className={styles.cardSubtitle}>{useCase.subtitle}</p>
                 <p className={styles.description}>{useCase.description}</p>
                 <ul className={styles.benefits}>
                   {useCase.benefits.map((benefit, index) => (

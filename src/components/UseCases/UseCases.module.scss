@@ -91,7 +91,7 @@
   }
 
   .card {
-    flex: 0 0 300px;
+    flex: 0 0 33%;
     background: var(--bg-cards);
     border-radius: 12px;
     overflow: hidden;
@@ -104,7 +104,7 @@
     }
 
     @media (max-width: 768px) {
-      flex: 0 0 280px;
+      flex: 0 0 95%;
     }
   }
 
@@ -139,12 +139,15 @@
       margin: 0 0 0.5rem 0;
     }
 
-    .cardSubtitle {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 0.875rem;
-      margin: 0;
-    }
+    
   }
+
+  .cardSubtitle {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1rem;
+      margin: 0;
+      margin-bottom: 24px;
+    }
 
   .cardContent {
     padding: 1.5rem;

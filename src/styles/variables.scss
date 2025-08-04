@@ -45,11 +45,11 @@
 // Dark mode
 [data-theme="dark"] {
   --background: #0a0a0a;
-  --foreground: #fff;
+  --foreground: rgba(255, 255, 255, 1.0);
   --bg-secondary: var(--background);
   
   --border-color: rgba(26, 26, 26, 0.25);
-  --woodsmoke-600: #efefef;
+  --woodsmoke-600:rgba(255, 255, 255, 0.8);
 
   --bg-primary: #0a0a0a;
   --bg-cards: #1a1a1a;

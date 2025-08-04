@@ -61,6 +61,7 @@ h3 {
   border: none;
   text-decoration: none;
   cursor: pointer;
+  font-family: var(--font-jetbrains);
 
   &.primary {
     background: var(--purple-500);
@@ -75,7 +76,7 @@ h3 {
   &.secondary {
     background: transparent;
     color: var(--foreground);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--foreground);
 
     &:hover {
       border-color: var(--purple-300);
