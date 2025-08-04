@@ -18,7 +18,7 @@
 .analyticsTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   margin-bottom: 1rem;
   line-height: 1.3;
 
@@ -43,7 +43,7 @@
   gap: 20px;
   margin-bottom: 4rem;
   padding: 0 24px;
-  background-color: aliceblue;
+  background-color: var(--bg-large-cards);
   border-radius: 16px;
   
   @media (max-width: 968px) {
@@ -74,7 +74,7 @@
   height: 100%;
   object-fit: contain;
   opacity: 1;
-  background-color: aliceblue;
+  background-color: var(--bg-large-cards);
   &[src="/performance-chart.png"],
   &[src="/platform-breakdown.png"] {
     opacity: 1;
@@ -126,9 +126,9 @@
 .featureCard {
   text-align: left;
   padding: 2rem 1.5rem;
-  // background: var(--bg-secondary);
+  background: var(--bg-cards);
   border-radius: 12px;
-  border: 1px solid #dfeafd;
+  border: 1px solid #1a1a1a25;
   transition: all 0.3s ease;
 
   &:hover {
@@ -155,7 +155,7 @@
 .featureTitle {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   margin-bottom: 0.75rem;
   line-height: 1.3;
 }

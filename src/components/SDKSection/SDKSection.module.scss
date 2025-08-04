@@ -153,7 +153,7 @@
 .sdkTitle {
   font-size: 2.25rem;
   font-weight: 800;
-  color: var(--woodsmoke-950);
+  color: var(--foreground);
   line-height: 1.2;
   margin-bottom: 1rem;
 
@@ -229,7 +229,7 @@
 }
 
 .codeHeader {
-  background: var(--woodsmoke-900);
+  background: var(--foreground);
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--woodsmoke-800);
 }

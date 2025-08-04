@@ -3,8 +3,13 @@
   // Light mode
   --background: #ffffff;
   --foreground: #171717;
-  --secondary-bg: #f6f6f8;
+  --bg-secondary: #f6f6f8;
   --border-color: rgba(0, 0, 0, 0.1);
+  --bg-cards: var(--background); 
+  --bg-large-cards: var(--purple-50);
+  
+  // --bg-primary: var(--background);
+  // --bg-secondary: var(--woodsmoke-50);
 
   // Woodsmoke (Primary Grays)
   --woodsmoke-50: #f6f6f6;
@@ -39,23 +44,32 @@
 // Dark mode
 [data-theme="dark"] {
   --background: #0a0a0a;
-  --foreground: #efefef;
-  --secondary-bg: #1a1a1a;
+  --foreground: #fff;
+  --bg-secondary: var(--background);
+  
   --border-color: rgba(26, 26, 26, 0.25);
+  --woodsmoke-600: #efefef;
+
+  --bg-primary: #0a0a0a;
+  --bg-cards: #1a1a1a;
+  --bg-large-cards: var(--bg-cards);
 }
-// // Dark mode
-// [data-theme="light"] {
-//   --background: #ffffff;
-//   --foreground: #efefef;
-//   --secondary-bg: #1a1a1a;
-//   --border-color: rgba(26, 26, 26, 0.25);
-// }
+
+// Dark mode
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #171717;
+  --bg-secondary: #f6f7f8;
+  --border-color: rgba(26, 26, 26, 0.25);
+
+  --bg-cards: var(--background);
+}
 
 // @media (prefers-color-scheme: dark) {
 //   :root {
 //     --background: #0a0a0a;
 //     --foreground: #efefef;
-//     --secondary-bg: #1a1a1a;
+//     --bg-secondary: #1a1a1a;
 //     --border-color: rgba(26, 26, 26, 0.25);
 //   }
 // }

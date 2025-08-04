@@ -1,7 +1,6 @@
 .developerSection {
   background: var(--bg-primary);
   padding: 6rem 0;
-  border-top: 2px solid var(--woodsmoke-50);
   @media (max-width: 768px) {
     padding: 4rem 0;
   }
@@ -18,7 +17,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   line-height: 1.2;
   margin-bottom: 1.5rem;
 
@@ -33,7 +32,7 @@
 
 .subtitle {
   font-size: 1.125rem;
-  color: var(--woodsmoke-600);
+  // color: var(--woodsmoke-600);
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
@@ -51,7 +50,7 @@
 .usageTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
 
   @media (max-width: 768px) {
     font-size: 1.75rem;
@@ -106,7 +105,7 @@
 .exampleTitle {
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   margin-top: 0.5rem;
   line-height: 1.8;
 
@@ -129,7 +128,7 @@
 }
 
 .codeHeader {
-  background: var(--woodsmoke-900);
+  background: var(--foreground);
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--woodsmoke-800);
 }

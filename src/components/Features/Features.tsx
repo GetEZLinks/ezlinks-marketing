@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import DeepLinksIcon from '../../../public/icons/deep-links.svg';
 import APIIcon from '../../../public/icons/source-code.svg';
-import AttributionIcon from '../../../public/icons/rta.svg';
+import AttributionIcon from '../../../public/icons/source-attribution.svg';
 import AnalyticsIcon from '../../../public/icons/analytics.svg';
 import MicroservicesIcon from '../../../public/icons/microservices.svg';
 import EdgeDeployementIcon from '../../../public/icons/edge-deploy.svg';

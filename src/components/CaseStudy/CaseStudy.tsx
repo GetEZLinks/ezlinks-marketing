@@ -68,7 +68,7 @@ export default function CaseStudySection() {
           >
             <div className={styles.featureNavigation}>
               {caseStudyFeatures.map((feature) => (
-                <button
+                <div
                   key={feature.id}
                   className={`${styles.featurePill} ${
                     activeFeature === feature.id ? styles.active : ''
@@ -84,7 +84,7 @@ export default function CaseStudySection() {
                       width={24}
                     />
                   </div>
-                </button>
+                </div>
               ))}
             </div>
 

@@ -28,7 +28,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  color: var(--foreground);
   line-height: 1.2;
   margin-bottom: 1.5rem;
 
@@ -57,7 +57,7 @@
   gap: 1rem;
   align-items: center;
   padding: 24px;
-  background: var(--purple-50);
+  background: var(--bg-large-cards);
   border-radius: 24px;
 
   @media (max-width: 968px) {
@@ -98,12 +98,12 @@
 
 .featurePill {
   padding: 1.5rem 1.5rem;
-  border: 1px solid var(--woodsmoke-200);
-  background: var(--bg-primary);
+  border: 1px solid #ffffff20;
+  background: var(--bg-cards);
   border-radius: 12px;
   font-size: 1.05rem;
   font-weight: 500;
-  color: var(--woodsmoke-700);
+  color: var(--foreground);
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: left;
@@ -119,17 +119,17 @@
   }
 
   &:hover {
-    border-color: var(--purple-300);
-    background: var(--purple-50);
+    // border-color: var(--purple-300);
+    // background: var(--purple-50);
     font-weight: 600;
   }
 
   &.active {
     background: var(--purple-500);
-    border-color: var(--purple-500);
+    // border-color: var(--purple-500);
     color: white;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+    // box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
     font-weight: 600;
   }
 

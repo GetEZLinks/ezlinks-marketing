@@ -1,5 +1,5 @@
 .cta {
-  background: var(--bg-primary);
+  // background: var(--bg-primary);
   padding: 6rem 0;
 
   @media (max-width: 768px) {
@@ -8,8 +8,8 @@
 }
 
 .ctaCard {
-  background: var(--purple-50);
-  border: 1px solid var(--purple-100);
+  background: var(--bg-large-cards);
+  // border: 1px solid var(--purple-100);
   border-radius: 16px;
   padding: 3rem;
   text-align: center;
@@ -29,7 +29,7 @@
 .ctaTitle {
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   line-height: 1.2;
   margin-bottom: 1rem;
 
@@ -80,7 +80,7 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 0.875rem;
-  color: var(--woodsmoke-700);
+  // color: var(--woodsmoke-700);
 }
 
 .checkmark {

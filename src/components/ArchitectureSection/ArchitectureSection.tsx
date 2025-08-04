@@ -56,7 +56,7 @@ export default function ArchitectureSection() {
           >
             <p className={styles.sectionLabel}>EZLinks Platform</p>
             <h2 className={styles.title}>
-              Modern Infrastructure.<br />
+              <span style={{ opacity: 0.3, display: "block", fontWeight: 900, letterSpacing: "-1.5px" }} >Modern Infrastructure.</span>
               No Bloat. Built for AI.
             </h2>
             <p className={styles.description}>
@@ -65,7 +65,7 @@ export default function ArchitectureSection() {
             </p>
           </motion.div>
 
-          <motion.div 
+          {/* <motion.div 
             className={styles.visualContainer}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -80,7 +80,7 @@ export default function ArchitectureSection() {
                 <div className={styles.dots}></div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <div className={styles.architectureLayout}>
@@ -138,6 +138,18 @@ export default function ArchitectureSection() {
             </div>
           </div>
         </div>
+        
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className={styles.ezlinksMov}
+          preload="metadata" // Loads video metadata but not full video until needed
+        >
+          <source src="/ezlinks.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         <motion.div 
           className={styles.complianceSection}

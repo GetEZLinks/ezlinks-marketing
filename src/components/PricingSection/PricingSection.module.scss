@@ -18,7 +18,7 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   line-height: 1.2;
   margin-bottom: 1rem;
 
@@ -52,7 +52,7 @@
 
 .pricingCard {
   background: var(--bg-primary);
-  border: 1px solid var(--woodsmoke-100);
+  border: 1px solid #91919150;
   border-radius: 16px;
   padding: 2rem;
   position: relative;
@@ -100,6 +100,7 @@
   display: flex;
   font-family: var(--font-jetbrains);
   font-weight: 700;
+  border: 1px solid white;
 }
 
 .popularBadge {
@@ -125,7 +126,7 @@
 .planName {
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   margin-bottom: 0.5rem;
 }
 
@@ -145,7 +146,7 @@
 .price {
   font-size: 3rem;
   font-weight: 800;
-  color: var(--woodsmoke-950);
+  // color: var(--woodsmoke-950);
   letter-spacing: -1.5px;
 
   @media (max-width: 768px) {
@@ -170,7 +171,6 @@
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.95rem;
-  color: var(--woodsmoke-700);
   line-height: 1.5;
 }
 

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import ThemeToggle from '@/components/ThemeToggle/ThemeToggle';
 import styles from './Header.module.scss';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -15,8 +16,14 @@ export default function Header() {
       <div className="container">
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <span className={styles.logoIcon}>⚡</span>
-            EZLinks
+            {/* <span className={styles.logoIcon}> */}
+              <Image
+                src='/ezlinks-logo.svg'
+                alt="Logo for EZLinks"
+                height={32}
+                width={124}
+              />
+            {/* </span> */}
           </div>
           
           <div className={styles.navLinks}>

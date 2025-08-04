@@ -1,6 +1,6 @@
 .footer {
   background: var(--bg-primary);
-  border-top: 1px solid var(--woodsmoke-100);
+  border-top:  2px solid #97979715;
   padding: 4rem 0 2rem;
 
   @media (max-width: 768px) {
@@ -57,7 +57,7 @@
 .linkColumn {
   .columnTitle {
     font-weight: 600;
-    color: var(--woodsmoke-950);
+    // color: var(--woodsmoke-950);
     margin-bottom: 1rem;
     font-size: 1rem;
   }
@@ -90,7 +90,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-  border-top: 1px solid var(--woodsmoke-100);
+  border-top: 1px solid  #97979725;
 
   @media (max-width: 640px) {
     flex-direction: column;
