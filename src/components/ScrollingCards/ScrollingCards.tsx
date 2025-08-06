@@ -129,7 +129,7 @@ const useCases: UseCase[] = [
   ];
 
 const ScrollingCards = () => {
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef <HTMLDivElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -149,7 +149,7 @@ const ScrollingCards = () => {
     }
   }, []);
 
-  const scrollToCard = (direction) => {
+  const scrollToCard = (direction: string) => {
     if (scrollContainerRef.current) {
       const container = scrollContainerRef.current;
       const cardWidth = container.offsetWidth * 0.85;
