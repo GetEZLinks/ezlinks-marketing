@@ -20,7 +20,7 @@ interface UseCase {
 const useCases: UseCase[] = [
     {
       id: 'sports-gaming',
-      title: 'Sports & Gaming',
+      title: 'Fantasy Sports',
       subtitle: 'Fantasy leagues and tournaments',
       description: 'QR code team invites, league attribution tracking, and viral game sharing.',
       benefits: ['PlaySquares integration', 'Tournament brackets', 'Team invites', 'Score tracking'],
