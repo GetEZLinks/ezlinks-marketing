@@ -3,16 +3,15 @@
 
 .hero {
   background: var(--background);
-  padding: 4rem 0;
+  padding: 8rem 0;
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: 8rem;
 
   @media (max-width: 768px) {
-    padding: 2rem 0;
+    padding: 4rem 0;
     min-height: 80vh;
-    padding-top: 4rem;
+    padding-top: 8rem;
   }
 }
 
