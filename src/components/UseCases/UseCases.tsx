@@ -187,7 +187,7 @@ const UseCases: React.FC = () => {
             <div key={useCase.id} className={styles.card}>
               <div 
                 className={styles.cardImage}
-                style={{ backgroundImage: `url(${useCase.bgImage})` }}
+                // style={{ backgroundImage: `url(${useCase.bgImage})` }}
               >
                 <div className={styles.overlay}>
                   <div className={styles.icon}>{useCase.icon}</div>

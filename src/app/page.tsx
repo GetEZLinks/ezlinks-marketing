@@ -14,6 +14,7 @@ import CaseStudySection from '@/components/CaseStudy/CaseStudy';
 import AttributionFlowSection from '@/components/AttributionFlow/AttributionFlowSection';
 import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
 import ScrollingCards from '@/components/ScrollingCards/ScrollingCards';
+import UseCases from '@/components/UseCases/UseCases';
 
 
 export default function Home() {
@@ -28,7 +29,8 @@ export default function Home() {
       <AnalyticsSection />
       <SDKSection />
       <ArchitectureSection />
-      <ScrollingCards />
+      {/* <ScrollingCards /> */}
+      <UseCases />
       <CaseStudySection />
       <AIFeaturesSection />
       <PricingSection />
