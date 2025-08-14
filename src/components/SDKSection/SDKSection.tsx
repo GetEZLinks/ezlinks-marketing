@@ -92,9 +92,9 @@ export default function SDKSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className={styles.phoneMockup}>
+            <div>
               <Image
-                src="/playsquares-qr-demo.png"
+                src="/sdk-group-mobile.webp"
                 alt="EZLinks Mobile SDK Demo"
                 width={800}
                 height={800}

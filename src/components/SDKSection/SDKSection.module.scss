@@ -31,7 +31,7 @@
 .sdkContent {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 20px;
+  gap: 2rem;
   align-items: center;
 
   @media (max-width: 968px) {
@@ -57,10 +57,12 @@
 }
 
 .phoneImage {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   opacity: 1;
-  
+  display: block;
+  margin: auto;
+
   &[src="/phone-qr-demo.png"]:not([src=""]) {
     opacity: 1;
     + .phonePlaceholder {
