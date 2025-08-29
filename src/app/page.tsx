@@ -26,8 +26,8 @@ export default function Home() {
       <DeveloperSection />
       <AttributionFlowSection />
       <QRSection />
-      <AnalyticsSection />
       <SDKSection />
+      <AnalyticsSection />
       <ArchitectureSection />
       {/* <ScrollingCards /> */}
       <UseCases />

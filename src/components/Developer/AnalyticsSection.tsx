@@ -43,7 +43,7 @@ export default function AnalyticsSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className={styles.analyticsTitle}>Powerful Analytics</h3>
+          <h2 className={styles.analyticsTitle}>Powerful Analytics</h2>
           <p className={styles.analyticsDescription}>
             Track every click, open, and conversion with real-time telemetry — without the SaaS bloat.
           </p>
