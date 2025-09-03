@@ -18,10 +18,10 @@ export default function Header() {
           <div className={styles.logo}>
             {/* <span className={styles.logoIcon}> */}
               <Image
-                src='/ezlinks-logo.svg'
+                src='/ezlinks-logo@2x.png'
                 alt="Logo for EZLinks"
-                height={32}
-                width={124}
+                height={24}
+                width={99}
               />
             {/* </span> */}
           </div>

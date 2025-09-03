@@ -31,10 +31,10 @@ export default function Footer() {
           <div className={styles.footerBrand}>
             <div className={styles.logo}>
               <Image
-                  src="/ezlinks-logo.svg"
+                  src="/ezlinks-logo@2x.png"
                   alt='EZLinks logo'
                   height={32}
-                  width={125}
+                  width={132}
                 />
             </div>
             <p className={styles.tagline}>Your OS for User Growth</p>
