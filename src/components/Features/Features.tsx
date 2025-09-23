@@ -6,15 +6,15 @@ import Image from 'next/image';
 import DeepLinksIcon from '../../../public/icons/deep-links.svg';
 import APIIcon from '../../../public/icons/source-code.svg';
 import AttributionIcon from '../../../public/icons/source-attribution.svg';
-import AnalyticsIcon from '../../../public/icons/analytics.svg';
+import QRCodeIcon from '../../../public/icons/qr-code.svg';
 import MicroservicesIcon from '../../../public/icons/microservices.svg';
 import EdgeDeployementIcon from '../../../public/icons/edge-deploy.svg';
 
 const features = [
   {
     icon: DeepLinksIcon,
-    title: 'Forever links',
-    description: 'Your deep links work permanently. No link rot, no expired URLs, no broken user experiences.'
+    title: 'Frictionless Deep Linking',
+    description: 'Automatically generate and host your AASA and assetlinks.json files. No manual setup, no server configuration. It just works.'
   },
   {
     icon: APIIcon,
@@ -26,10 +26,15 @@ const features = [
     title: 'Real-time Attribution',
     description: 'Real-time vs batch: See conversions as they happen, not hours later. Make decisions on live data, not yesterday\'s reports'
   },
+  // {
+  //   icon: AnalyticsIcon,
+  //   title: 'Clean analytics',
+  //   description: 'See what matters Simple dashboard showing where users actually come from.'
+  // },
   {
-    icon: AnalyticsIcon,
-    title: 'Clean analytics',
-    description: 'See what matters Simple dashboard showing where users actually come from.'
+    icon: QRCodeIcon,
+    title: 'Forever links',
+    description: 'Your deep links work permanently. No link rot, no expired URLs, no broken user experiences.'
   },
   {
     icon: MicroservicesIcon,

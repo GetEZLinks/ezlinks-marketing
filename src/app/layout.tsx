@@ -5,7 +5,7 @@ import "../styles/globals.scss";
 
 export const metadata: Metadata = {
   title: 'EZLinks - Deep links and attribution that just works',
-  description: 'Open-core alternative built by developers for developers',
+  description: 'Ship deep links in minutes, not days. We handle the complex plumbing of deep linking automatically, so you can focus on building your product.',
 };
 
 
