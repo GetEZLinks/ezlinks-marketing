@@ -19,7 +19,7 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            <code>Ship deep links in minutes, not days. We handle the complex plumbing automatically, so you can focus on building your product.</code>
+            <code>Ship trackable deep links and QR codes in minutes, not days.</code>
           </p>
           
           <div className={styles.cta}>
@@ -50,7 +50,7 @@ export default function Hero() {
         >
           <div className={styles.dashboardContainer}>
             <Image
-              src="/ezlinks-dash.png"
+              src="/ezlinks-attribution-dash.jpg"
               alt="EZLinks Analytics Dashboard"
               width={900}
               height={0}
