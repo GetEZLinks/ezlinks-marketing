@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import styles from './Hero.module.scss';
+import HowItWorks from './HowItWorks';
 
 export default function Hero() {
   return (
@@ -59,6 +60,7 @@ export default function Hero() {
             />
           </div>
         </motion.div>
+        <HowItWorks />
       </div>
     </section>
   );
