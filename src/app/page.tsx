@@ -24,16 +24,16 @@ export default function Home() {
       <Hero />
       <Features />
       <DeveloperSection />
-      <AttributionFlowSection />
+      {/* <AttributionFlowSection /> */}
       <QRSection />
       <SDKSection />
       <AnalyticsSection />
-      <ArchitectureSection />
+      {/* <ArchitectureSection /> */}
       {/* <ScrollingCards /> */}
-      <UseCases />
-      <CaseStudySection />
-      <AIFeaturesSection />
-      <PricingSection />
+      {/* <UseCases /> */}
+      {/* <CaseStudySection /> */}
+      {/* <AIFeaturesSection /> */}
+      {/* <PricingSection /> */}
       <CTA />
       <Footer/>
     </main>

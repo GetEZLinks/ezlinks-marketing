@@ -51,9 +51,9 @@ export default function Hero() {
         >
           <div className={styles.dashboardContainer}>
             <Image
-              src="/ezlinks-attribution-dash.jpg"
+              src="/app-onboard.png"
               alt="EZLinks Analytics Dashboard"
-              width={900}
+              width={1200}
               height={0}
               priority
               className={styles.dashboardImage}

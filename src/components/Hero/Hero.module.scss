@@ -70,13 +70,15 @@
 }
 
 .dashboardPreview {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 2rem auto;
 }
 
 .dashboardContainer {
   position: relative;
   border-radius: 12px;
+  // padding: 12px;
+  margin-top: 4rem;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   // border: 1px solid var(--woodsmoke-100);
@@ -84,9 +86,10 @@
   filter: var(--image-filter);
   
   img {
-    width: 900px;
+    width: 1200px;
     height: auto;
     max-width: 100%;
+    box-shadow: none;
   }
 }
 

@@ -7,6 +7,7 @@ import DeepLinksIcon from '../../../public/icons/deep-links.svg';
 import APIIcon from '../../../public/icons/source-code.svg';
 import AttributionIcon from '../../../public/icons/source-attribution.svg';
 import QRCodeIcon from '../../../public/icons/qr-code.svg';
+import ForeverIcon from '../../../public/icons/forever.svg';
 import MicroservicesIcon from '../../../public/icons/microservices.svg';
 import EdgeDeployementIcon from '../../../public/icons/edge-deploy.svg';
 
@@ -32,7 +33,7 @@ const features = [
   //   description: 'See what matters Simple dashboard showing where users actually come from.'
   // },
   {
-    icon: QRCodeIcon,
+    icon: ForeverIcon,
     title: 'Forever links',
     description: 'Your deep links work permanently. No link rot, no expired URLs, no broken user experiences.'
   },
@@ -83,8 +84,8 @@ export default function Features() {
                 <Image
                   src={feature.icon}
                   alt=""
-                  height={28}
-                  width={28}
+                  height={20}
+                  width={20}
                 />
               </div>
               <h3 className={styles.featureTitle}>

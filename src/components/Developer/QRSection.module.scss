@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
 
   @media (max-width: 968px) {
     grid-template-columns: 1fr;
@@ -33,8 +33,7 @@
 
 .qrTitle {
   font-size: 1.5rem;
-  font-weight: 700;
-  // color: var(--woodsmoke-950);
+  font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.3;
 
@@ -62,7 +61,7 @@
   li {
     position: relative;
     padding-left: 1.5rem;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     // color: var(--woodsmoke-700);
     line-height: 1.6;
 
@@ -78,10 +77,10 @@
 }
 
 .activityFeed {
-  background: var(--bg-secondary);
+  // background: var(--bg-secondary);
   border-radius: 12px;
   padding: 1.5rem;
-  border: 1px solid var(--woodsmoke-100);
+  border: 1px solid #97979730;
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 

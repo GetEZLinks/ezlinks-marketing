@@ -72,7 +72,8 @@
 }
 
 .featureCard {
-  background: var(--bg-cards);
+  // background: var(--bg-cards);
+  border: 1px solid #97979750;
   padding: 20px;
   border-radius: 12px;
   // border: 1px solid var(--woodsmoke-200);

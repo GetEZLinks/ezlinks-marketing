@@ -29,7 +29,7 @@
 
 .analyticsDescription {
   font-size: 1.125rem;
-  color: var(--woodsmoke-600);
+  // color: var(--woodsmoke-600);
   line-height: 1.6;
 
   @media (max-width: 768px) {
@@ -42,9 +42,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-bottom: 4rem;
-  padding: 1.5rem;
-  background-color: var(--bg-large-cards);
-  border-radius: 16px;
+  // padding: 1.5rem;
+  // background-color: var(--bg-large-cards);
+  // border-radius: 16px;
   
   @media (max-width: 968px) {
     grid-template-columns: 1fr;
@@ -63,7 +63,7 @@
 .chartPlaceholder {
   position: relative;
   // aspect-ratio: 5/3;
-  background: var(--bg-secondary);
+  // background: var(--bg-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,10 @@
   height: 100%;
   object-fit: contain;
   opacity: 1;
-  background-color: var(--bg-large-cards);
+  border: 1px solid #97979750 ;
+  padding: 12px;
+  border-radius: 12px;
+  // background-color: var(--bg-large-cards);
   &[src="/performance-chart.png"],
   &[src="/platform-breakdown.png"] {
     opacity: 1;
@@ -128,9 +131,9 @@
 .featureCard {
   text-align: left;
   padding: 2rem 1.5rem;
-  background: var(--bg-cards);
+  // background: var(--bg-cards);
   border-radius: 12px;
-  border: 1px solid #1a1a1a25;
+  // border: 1px solid #97979750;
   transition: all 0.3s ease;
 
   &:hover {

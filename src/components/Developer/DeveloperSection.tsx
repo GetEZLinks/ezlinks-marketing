@@ -45,6 +45,7 @@ export default function DeveloperSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          <p className={styles.sectionLabel}>Super EZ to Use</p>
           <h2 className={styles.title}>
             Built for Developer by Developers
           </h2>
@@ -60,7 +61,8 @@ export default function DeveloperSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h3 className={styles.usageTitle}>Super EZ to Use</h3>
+          {/* <h3 className={styles.usageTitle}>Super EZ to Use</h3> */}
+          
         </motion.div>
 
         <div className={styles.codeExamples}>
