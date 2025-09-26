@@ -30,6 +30,15 @@
   }
 }
 
+.sectionLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--woodsmoke-500);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
 .subtitle {
   font-size: 1.125rem;
   // color: var(--woodsmoke-600);
