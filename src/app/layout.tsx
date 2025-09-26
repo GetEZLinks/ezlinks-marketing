@@ -4,7 +4,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "../styles/globals.scss";
 
 export const metadata: Metadata = {
-  title: 'EZLinks - Deep links and attribution that just works',
+  title: 'EZLinks - Deep links made simple.',
   description: 'Ship deep links in minutes, not days. We handle the complex plumbing of deep linking automatically, so you can focus on building your product.',
 };
 
