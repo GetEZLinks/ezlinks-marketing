@@ -92,31 +92,14 @@ export default function SDKSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div>
+            <div className={styles.phoneDemo}>
               <Image
-                src="/sdk-group-mobile.webp"
+                src="/simple-integration@2x.png"
                 alt="EZLinks Mobile SDK Demo"
-                width={800}
-                height={800}
+                width={300}
+                height={300}
                 className={styles.phoneImage}
               />
-              <div className={styles.phonePlaceholder} style={{display: "none"}}>
-                <div className={styles.phoneFrame}>
-                  <div className={styles.phoneScreen}>
-                    <div className={styles.phoneHeader}>
-                      <span>3:41</span>
-                      <div className={styles.phoneIcons}>📶 📶 🔋</div>
-                    </div>
-                    <div className={styles.phoneContent}>
-                      <h4>Rupesh Pandey</h4>
-                      <p>rupesh</p>
-                      <div className={styles.qrCode}>
-                        <div className={styles.qrPattern}></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </motion.div>
 
@@ -127,12 +110,12 @@ export default function SDKSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className={styles.sectionLabel}>CLIENT SDK</p>
+            <p className={styles.sectionLabel}>CLIENT SDKs</p>
             <h3 className={styles.sdkTitle}>
-              Mobile and Web SDKs and more
+              Simple Integration. Powerful SDKs.
             </h3>
             <p className={styles.sdkDescription}>
-              EZLinks drops into your stack in minutes — not weeks.
+              EZLinks drops into your stack in minutes.
             </p>
 
             <div className={styles.platformTabs}>

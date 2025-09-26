@@ -13,10 +13,10 @@
 }
 
 .sectionLabel {
-  font-size: 0.875rem;
+  font-size: 0.775rem;
   font-weight: 600;
   color: var(--purple-600);
-  color: var(--woodsmoke-500);
+  // color: var(--woodsmoke-500);
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -31,7 +31,7 @@
 
 .sdkContent {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
 
@@ -47,27 +47,20 @@
 .phoneDemo {
   display: flex;
   justify-content: center;
-}
 
-.phoneMockup {
-  position: relative;
-  max-width: 300px;
-  @media (max-width: 480px) {
-    display: none;
-  }
-}
-
-.phoneImage {
-  max-width: 90%;
-  height: auto;
-  opacity: 1;
-  display: block;
-  margin: auto;
-
-  &[src="/phone-qr-demo.png"]:not([src=""]) {
+  .phoneImage {
+    max-width: 100%;
+    height: auto;
     opacity: 1;
-    + .phonePlaceholder {
-      display: none;
+    display: block;
+    margin: auto;
+    border: none;
+
+    &[src="/phone-qr-demo.png"]:not([src=""]) {
+      opacity: 1;
+      + .phonePlaceholder {
+        display: none;
+      }
     }
   }
 }

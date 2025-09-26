@@ -6,6 +6,15 @@
   }
 }
 
+.sectionLabel {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--purple-600);
+  // color: var(--woodsmoke-50/0);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
 
 .analyticsHeader {
   text-align: center;
