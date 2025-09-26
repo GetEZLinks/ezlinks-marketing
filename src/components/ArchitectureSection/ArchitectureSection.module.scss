@@ -180,13 +180,14 @@
 
 .architectureLayout {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  // gap: 1rem;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 1rem;
   // margin-bottom: 3rem;
   align-items: center;
   border-radius: 4px;
-  border: 2px dashed #97979725;
-  padding: 2rem 16px;
+  border-top: 2px dashed #97979735;
+  border-bottom: 2px dashed #97979735;
+  padding: 2rem 0;
 
   @media (max-width: 968px) {
     grid-template-columns: 1fr;
