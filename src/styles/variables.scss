@@ -19,6 +19,7 @@
   --woodsmoke-400: #888888;
   --woodsmoke-500: #6d6d6d;
   // --woodsmoke-600: #5d5d5d;
+  // --woodsmoke-600:rgba(255, 255, 255, 0.7);
   --woodsmoke-700: #4f4f4f;
   --woodsmoke-800: #454545;
   --woodsmoke-900: #3d3d3d;
@@ -48,8 +49,9 @@
   --foreground: rgba(255, 255, 255, 1.0);
   --bg-secondary: var(--background);
   
+  
   --border-color: rgba(26, 26, 26, 0.25);
-  --woodsmoke-600:rgba(255, 255, 255, 0.6);
+  --woodsmoke-600:rgba(255, 255, 255, 0.7);
 
   --bg-primary: #0a0a0a;
   --bg-cards: #1a1a1a;

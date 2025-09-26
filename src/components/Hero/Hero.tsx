@@ -38,7 +38,7 @@ export default function Hero() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Live Demo
+              Demo
             </motion.a>
           </div>
         </motion.div>

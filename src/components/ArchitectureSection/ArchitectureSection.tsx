@@ -41,8 +41,86 @@ const supportingServices = [
 ];
 
 const complianceBadges = ['HIPAA', 'SOC2', 'GDPR'];
+const newLook = true;
+
+const NewLayout = () => {
+  return (
+    <section className={styles.architectureSection}>
+      <div className="container">
+        <div className={styles.architectureContent}>
+          <motion.div 
+            className={styles.architectureHeader}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <p className={styles.sectionLabel}>CORE</p>
+            <h2 className={styles.title}>
+              <span>Modern Infrastructure.</span>
+              No Bloat. Built for AI.
+            </h2>
+            <p className={styles.description}>
+              EZLinks is designed to be invisible until it matters—blazing-fast routing, real-time attribution, 
+              and developer-grade observability in a modular stack.
+            </p>
+          </motion.div>
+        </div>
+        <div className={styles.architectureLayout}>
+          <div className={styles.coreEngineSection}>
+            <div className={styles.coreGrid}>
+              {coreComponents.map((component, index) => (
+                <motion.div
+                  key={component.title}
+                  className={`${styles.componentCard} ${styles.coreCard}`}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <h4 className={styles.componentTitle}>{component.title}</h4>
+                  <p className={styles.componentDescription}>{component.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            className={styles.ezlinksVid}
+            preload="metadata" // Loads video metadata but not full video until needed
+          >
+            <source src="/ezlinks.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <motion.div 
+          className={styles.complianceSection}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <div className={styles.complianceBadges}>
+            {complianceBadges.map((badge) => (
+              <div key={badge} className={styles.complianceBadge}>
+                {badge}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}
 
 export default function ArchitectureSection() {
+
+  if (newLook) return <NewLayout />
+
   return (
     <section className={styles.architectureSection}>
       <div className="container">

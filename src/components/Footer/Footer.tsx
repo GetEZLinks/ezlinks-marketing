@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const footerLinks = {
   Product: [
-    { label: 'Features', href: '#features' },
-    { label: 'Pricing', href: '#pricing' },
+    // { label: 'Features', href: '#features' },
     { label: 'Docs', href: '#docs' },
     { label: 'SDK', href: '#sdk' },
-    { label: 'Demo', href: '#demo' }
+    { label: 'Demo', href: '#demo' },
+    { label: 'Pricing', href: '#pricing' }
   ],
   Company: [
     { label: 'About', href: '#about' },
