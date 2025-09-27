@@ -5,7 +5,7 @@ import styles from './AnalyticsSection.module.scss';
 
 
 import TimeSeriesIcon from '../../../public/icons/time-series-logging.svg';
-import SourcesIcon from '../../../public/icons/source-attribution.svg';
+import SourcesIcon from '../../../public/icons/campaigns.svg';
 import DeviceFingerPrintingIcon from '../../../public/icons/device-fingerprinting.svg';
 import BehaviorCaptureIcon from '../../../public/icons/behavior-capture.svg';
 

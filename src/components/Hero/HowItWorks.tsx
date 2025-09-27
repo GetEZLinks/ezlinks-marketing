@@ -6,20 +6,20 @@ export default function HowItWorks() {
     {
       icon: '/icons/code-block.svg',
       number: "1",
-      title: "Configure Your App in Minutes",
+      title: "Immediate Sign up",
       description: "Connect your iOS or Android app once. We automatically generate and host the technical files needed for deep linking."
     },
     {
-      icon: '/icons/deep-links.svg',
+      icon: '/icons/qr-code.svg',
       number: "2", 
-      title: "Create Links Instantly",
+      title: "Create & Manage Your Links",
       description: "Generate branded short links and downloadable QR codes for any campaign, directly from your dashboard."
     },
     {
-      icon: '/icons/edge-deploy.svg',
+      icon: '/icons/analytics.svg',
       number: "3",
-      title: "We Handle the Complex Plumbing", 
-      description: "From smart routing to real-time attribution, we manage the infrastructure so you can focus on your product."
+      title: "Gain Full Visibility", 
+      description: "See every click, install, and conversion in real-time with developer-friendly logs."
     }
   ];
 

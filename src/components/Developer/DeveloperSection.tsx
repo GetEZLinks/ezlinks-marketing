@@ -7,6 +7,7 @@ import CheckIcon from '../../../public/icons/checkmark.svg';
 
 const codeExamples = [
   {
+    icon: '/icons/deep-links.svg',
     title: 'Links That Actually Work',
     description: 'Universal deep links that don\'t break. No complex fallback logic required.',
     code: `const link = ezlinks.create({ campaign:
@@ -15,6 +16,7 @@ app.store', data: { promo_code:
 'SUMMER20' } }); // Just works. Period.`
   },
   {
+    icon: '/icons/campaigns.svg',
     title: 'Attribution You Can Trust',
     description: 'Open-source attribution modeling. See exactly how we calculate everything.',
     code: `// First-party data, zero black boxes
@@ -24,6 +26,7 @@ ezlinks.getAttribution({ user_id:
 'last_click' // or build your own });`
   },
   {
+    icon: '/icons/edge-deploy.svg',
     title: 'Ship Fast, Debug Faster',
     description: 'Real-time tracking with millisecond precision. No waiting for batch processing.',
     code: `// Real-time events, zero lag
@@ -77,7 +80,7 @@ export default function DeveloperSection() {
             >
               <div className={styles.exampleContent}>
                 <Image
-                  src={CheckIcon}
+                  src={example.icon}
                   alt=''
                   height={24}
                   width={24}
