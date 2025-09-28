@@ -19,10 +19,10 @@ export default function CTA() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-              Ready to unify your linking strategy?
+             Ship your first deep link in minutes.
             </h2>
             <p className={styles.ctaSubtitle}>
-              Start your <strong>30-day free trial</strong> today and see how EZLinks can transform your user journeys.
+              {/* Start your <strong>30-day free trial</strong> today and see how EZLinks can transform your user journeys. */}
             </p>
             <motion.a 
               href="#signup" 
