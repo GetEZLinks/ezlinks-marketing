@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './CTA.module.scss';
-
+import Link from 'next/link';
 import Image from 'next/image';
 import CheckIcon from '../../../public/icons/checkmark.svg';
 
@@ -24,14 +24,17 @@ export default function CTA() {
             <p className={styles.ctaSubtitle}>
               {/* Start your <strong>30-day free trial</strong> today and see how EZLinks can transform your user journeys. */}
             </p>
-            <motion.a 
-              href="#signup" 
-              className="btn primary"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Sign up for Early Access
-            </motion.a>
+            
+              <motion.a 
+                href="https://forms.gle/orDx5bQKBtFKHSHJ8" 
+                className="btn primary"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+
+                Sign up for Early Access
+                </motion.a>
+            
           </div>
           
           <div className={styles.ctaFeatures}>

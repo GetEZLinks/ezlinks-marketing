@@ -24,7 +24,7 @@ export default function Hero() {
           
           <div className={styles.cta}>
             <motion.a 
-              href="#start" 
+              href="https://forms.gle/orDx5bQKBtFKHSHJ8" 
               className="btn primary"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -32,7 +32,7 @@ export default function Hero() {
               Start Linking - Free
             </motion.a>
             <motion.a 
-              href="#demo" 
+              href="https://forms.gle/orDx5bQKBtFKHSHJ8" 
               className="btn secondary"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
