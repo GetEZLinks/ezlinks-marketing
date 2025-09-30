@@ -15,12 +15,10 @@
 
 .grid {
   display: grid;
-  // max-width: 90%;
+  max-width: 80%;
   margin: auto;
-  // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-columns: repeat(3, 1fr);
-  gap:1rem;
-  // align-items: start;
+  gap: 1rem;
 }
 
 .card {
