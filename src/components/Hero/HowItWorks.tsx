@@ -6,7 +6,7 @@ export default function HowItWorks() {
     {
       icon: '/icons/code-block.svg',
       number: "1",
-      title: "Immediate Sign up",
+      title: "Simple Onboarding",
       description: "Connect your iOS or Android app once. We automatically generate and host the technical files needed for deep linking."
     },
     {
@@ -19,7 +19,7 @@ export default function HowItWorks() {
       icon: '/icons/analytics.svg',
       number: "3",
       title: "Gain Full Visibility", 
-      description: "See every click, install, and conversion in real-time with developer-friendly logs."
+      description: "See every click, install, and conversion in real-time with developer-friendly analytics and logs."
     }
   ];
 
