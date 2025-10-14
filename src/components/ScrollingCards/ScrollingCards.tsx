@@ -23,7 +23,7 @@ const useCases: UseCase[] = [
       title: 'Fantasy Sports',
       subtitle: 'Fantasy leagues and tournaments',
       description: 'QR code team invites, league attribution tracking, and viral game sharing.',
-      benefits: ['PlaySquares integration', 'Tournament brackets', 'Team invites', 'Score tracking'],
+      benefits: ['Live sports integration', 'Tournament brackets', 'Team invites', 'Score tracking'],
       icon: '🎮',
       bgImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=300&fit=crop'
     },

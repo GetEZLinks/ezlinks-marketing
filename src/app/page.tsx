@@ -14,6 +14,7 @@ import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSe
 // import AttributionFlowSection from '@/components/AttributionFlow/AttributionFlowSection';
 // import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
 import ScrollingCards from '@/components/ScrollingCards/ScrollingCards';
+import UseCases from '@/components/UseCases/UseCases';
 // import UseCases from '@/components/UseCases/UseCases';
 
 
@@ -29,7 +30,7 @@ export default function Home() {
       <SDKSection />
       <AnalyticsSection />
       <ArchitectureSection />
-      {/* <ScrollingCards /> */}
+      <ScrollingCards />
       {/* <UseCases /> */}
       {/* <CaseStudySection /> */}
       {/* <AIFeaturesSection /> */}
