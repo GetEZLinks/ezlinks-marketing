@@ -19,7 +19,10 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            <code>Ship trackable deep links and QR codes in minutes, not days.</code>
+            {/* <code>Ship trackable deep links and QR codes in minutes, not days.</code> */}
+            <code>
+              EZLinks platform turns your mobile links into your highest-converting channel. Seamlessly route users, attribute every conversion, and boost your ROI.
+            </code>
           </p>
           
           <div className={styles.cta}>
