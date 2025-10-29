@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  padding: 8rem 0 40px;
+  padding: 8rem 0 ;
   // background: var(--bg-secondary); 
   border-top:  2px solid #97979715;
   position: relative;
@@ -327,7 +327,7 @@
 
 .progressBar {
   height: 100%;
-  background: #000;
+  background: #97979725;
   border-radius: 2px;
   transition: width 0.3s ease;
 }
