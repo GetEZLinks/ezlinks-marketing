@@ -110,7 +110,7 @@ export default function SDKSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className={styles.sectionLabel}>CLIENT SDKs</p>
+            <p className={styles.sectionLabel}>EZSDK</p>
             <h3 className={styles.sdkTitle}>
               Simple Integration. Powerful SDKs.
             </h3>
