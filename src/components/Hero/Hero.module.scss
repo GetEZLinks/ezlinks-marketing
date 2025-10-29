@@ -92,6 +92,12 @@
     right: -100px; 
     width: 350px; 
     height: auto; 
+
+    @media (max-width: 480px) {
+      width: 125px;  
+      right: -20px;
+      bottom: -20px;
+    }
   }
 
 }
