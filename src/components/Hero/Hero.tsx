@@ -49,14 +49,22 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
-          <div className={styles.dashboardContainer}>
+          <div className={styles.imageContainer}>
             <Image
-              src="/app-onboard.png"
+              src="/ezlinks-dash.jpg"
               alt="EZLinks Analytics Dashboard"
               width={1200}
               height={0}
               priority
-              className={styles.dashboardImage}
+              className={styles.dashImage}
+            />
+            <Image
+              src="/ezlinks-dash-apps@2x.png"
+              alt="EZLinks Analytics Dashboard"
+              width={1200}
+              height={0}
+              priority
+              className={styles.mobileImage}
             />
           </div>
         </motion.div>

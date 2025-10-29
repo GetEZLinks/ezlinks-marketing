@@ -66,23 +66,34 @@
   margin: 2rem auto;
 }
 
-.dashboardContainer {
-  position: relative;
-  border-radius: 12px;
-  // padding: 12px;
-  margin-top: 4rem;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  // border: 1px solid var(--woodsmoke-100);
 
-  filter: var(--image-filter);
+.imageContainer {
+
+  position: relative;
+  max-width: 900px;
+  /* Centers the container horizontally on the page */
+  margin: 0 auto; 
   
-  img {
-    width: 900px;
+  .dashImage {
+    /* Ensures the dashboard image fills the container */
+    width: 100%;
     height: auto;
-    max-width: 100%;
-    box-shadow: none;
+    /* Makes the image flexible and responsive */
+    display: block; 
+    
+    filter: var(--image-filter);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
+
+  .mobileImage {
+    position: absolute; 
+    bottom: -50px; 
+    right: -100px; 
+    width: 350px; 
+    height: auto; 
+  }
+
 }
 
 .dashboardPlaceholder {
