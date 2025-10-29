@@ -19,7 +19,8 @@ export default function CTA() {
         >
           <div className={styles.ctaContent}>
             <h2 className={styles.ctaTitle}>
-             Ship your first deep link in minutes.
+              {/* Ship your first deep link in minutes. */}
+              Ready to track what really matters?
             </h2>
             <p className={styles.ctaSubtitle}>
               {/* Start your <strong>30-day free trial</strong> today and see how EZLinks can transform your user journeys. */}
@@ -69,7 +70,7 @@ export default function CTA() {
                   width={20}
                 />
               </span>
-              <span>Full API access</span>
+              <span>EZSDK</span>
             </div>
           </div>
         </motion.div>

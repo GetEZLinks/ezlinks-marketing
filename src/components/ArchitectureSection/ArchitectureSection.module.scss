@@ -55,13 +55,15 @@
   }
   > span {
     display: block;
-    opacity: 0.6;
+    // opacity: 0.6;
+    color: var(--woodsmoke-600);
+    font-weight: 600;
   }
 }
 
 .description {
   font-size: 1.125rem;
-  // color: #efefef;
+  color: var(--woodsmoke-600);  
   line-height: 1.6;
   max-width: 740px;
   text-align: left;

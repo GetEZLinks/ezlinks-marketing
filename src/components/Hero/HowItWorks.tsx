@@ -6,19 +6,19 @@ export default function HowItWorks() {
     {
       icon: '/icons/code-block.svg',
       number: "1",
-      title: "Simple Onboarding",
+      title: "Integrate in minutes",
       description: "Connect your iOS or Android app once. We automatically generate and host the technical files needed for deep linking."
     },
     {
       icon: '/icons/qr-code.svg',
       number: "2", 
-      title: "Create & Manage Your Links",
+      title: "Launch Your Links",
       description: "Generate branded short links and downloadable QR codes for any campaign, directly from your dashboard."
     },
     {
       icon: '/icons/analytics.svg',
       number: "3",
-      title: "Gain Full Visibility", 
+      title: "Get Clear Insights", 
       description: "See every click, install, and conversion in real-time with developer-friendly analytics and logs."
     }
   ];

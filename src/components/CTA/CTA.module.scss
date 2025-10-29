@@ -28,10 +28,11 @@
 
 .ctaTitle {
   font-size: 1.75rem;
-  font-weight: 700;
+  // font-weight: 700;
   // color: var(--woodsmoke-950);
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 1rem;
+  letter-spacing: -2%;
 
   @media (max-width: 768px) {
     font-size: 1.875rem;
@@ -89,4 +90,7 @@
   font-size: 1rem;
   display: flex;
   align-items: center;
+   span {
+    color: var(--woodsmoke-600);
+  }
 }

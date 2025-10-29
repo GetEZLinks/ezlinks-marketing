@@ -38,19 +38,11 @@
 }
 
 .subtitle {
-  color: var(--woodsmoke-600);
   margin: auto;
   margin-bottom: 2.5rem;
   max-width: 740px;
-  code {
-    color: var(--purple-600);
-    background: var(--bg-secondary);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    // font-size: 1rem;
-    font-size: 0.975rem;
-    font-weight: 600;
-  }
+  color: #848484;
+  font-weight: 500;
 
   @media (max-width: 768px) {
     font-size: 1rem;
