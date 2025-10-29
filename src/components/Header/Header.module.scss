@@ -51,11 +51,11 @@
   gap: 2rem;
 
   a {
-    color: var(--foreground);
-    font-weight: 500;
+    color: var(--woodsmoke-600);
+    font-weight: 550;
     transition: color 0.2s ease;
-    opacity: 0.8;
-
+    // opacity: 0.8;
+    font-size: 14px;
     &:hover {
       opacity: 1;
     }

@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import ThemeToggle from '@/components/ThemeToggle/ThemeToggle';
 import styles from './Header.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Header() {
   return (
@@ -16,14 +18,14 @@ export default function Header() {
       <div className="container">
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            {/* <span className={styles.logoIcon}> */}
+            <Link href='/'>
               <Image
                 src='/ezlinks-logo@2x.png'
                 alt="Logo for EZLinks"
                 height={24}
                 width={99}
               />
-            {/* </span> */}
+            </Link>
           </div>
           
           <div className={styles.navLinks}>
