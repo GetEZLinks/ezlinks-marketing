@@ -168,9 +168,11 @@
 .feature {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 550;
+  color: var(--woodsmoke-600);
 }
 
 .checkIcon {
