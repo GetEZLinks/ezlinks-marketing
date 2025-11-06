@@ -15,12 +15,11 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className={styles.title}>
-            Deep links made <em>simple.</em>
+            Finally,Deep Linking Built for Developers   
           </h1>
           
           <p className={styles.subtitle}>
-            EZLinks turns your mobile links into your highest-converting channel.
-            Get seamless, transparent mobile attribution and deep linking without the enterprise headaches.
+            Transparent pricing and a simple SDK. We&apos;re the modern AI-powered alternative to Branch.
           </p>
           
           <div className={styles.cta}>
