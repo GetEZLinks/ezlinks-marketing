@@ -1,8 +1,17 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+
 import styles from './Hero.module.scss';
 import HowItWorks from './HowItWorks';
+import CodeSnippet from '../CodeSnippet';
+
+const codeString = `$ npm install ezlinks-sdk
+✓ Installing attribution without the bloat...
+$ ezlinks init
+✓ SDK initialized - tracking ready in 30 seconds
+$ ezlinks track --event="app_install" --source="instagram"
+✓ Event tracked | Attribution: Instagram Story → App Install
+✓ Revenue impact: $23.50 | ROI: 340%`
 
 export default function Hero() {
   return (
@@ -42,7 +51,9 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <motion.div 
+        <CodeSnippet codeString={codeString} />
+
+        {/* <motion.div 
           className={styles.dashboardPreview}
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,7 +77,7 @@ export default function Hero() {
               className={styles.mobileImage}
             />
           </div>
-        </motion.div>
+        </motion.div> */}
         <HowItWorks />
       </div>
     </section>

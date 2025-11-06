@@ -50,7 +50,7 @@ export default function DeveloperSection() {
         >
           <p className={styles.sectionLabel}>Super EZ to Use</p>
           <h2 className={styles.title}>
-            Built for Developer by Developers
+            Built for Developers by Developers
           </h2>
           <p className={styles.subtitle}>
             Stop stitching together multiple tools. Get complete attribution in one developer-friendly platform.
