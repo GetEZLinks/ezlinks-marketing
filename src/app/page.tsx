@@ -1,7 +1,7 @@
 // src/app/page.tsx
 import Header from '@/components/Header/Header';
 import Hero from '@/components/Hero/Hero';
-import Features from '@/components/Features/Features';
+// import Features from '@/components/Features/Features';
 import DeveloperSection from '@/components/Developer/DeveloperSection';
 import QRSection from '@/components/Developer/QRSection';
 import AnalyticsSection from '@/components/Developer/AnalyticsSection';
@@ -12,10 +12,9 @@ import SDKSection from '@/components/SDKSection/SDKSection';
 import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSection';
 // import CaseStudySection from '@/components/CaseStudy/CaseStudy';
 // import AttributionFlowSection from '@/components/AttributionFlow/AttributionFlowSection';
-// import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
-import ScrollingCards from '@/components/ScrollingCards/ScrollingCards';
+import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
+// import ScrollingCards from '@/components/ScrollingCards/ScrollingCards';
 import UseCases from '@/components/UseCases/UseCases';
-import PricingSection from '@/components/PricingSection/PricingSection';
 // import UseCases from '@/components/UseCases/UseCases';
 
 
@@ -34,8 +33,7 @@ export default function Home() {
       {/* <ScrollingCards />˝ */}
       <UseCases />  
       {/* <CaseStudySection /> */}
-      {/* <AIFeaturesSection /> */}
-      <PricingSection />
+      <AIFeaturesSection />
       <CTA />
       <Footer/>
     </main>

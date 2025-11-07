@@ -7,7 +7,7 @@ const footerLinks = {
     { label: 'Docs', href: '#docs' },
     { label: 'SDK', href: '#sdk' },
     { label: 'Demo', href: '#demo' },
-    { label: 'Pricing', href: '#pricing' }
+    { label: 'Pricing', href: 'pricing' }
   ],
   Company: [
     { label: 'About', href: '#about' },
@@ -31,10 +31,10 @@ export default function Footer() {
           <div className={styles.footerBrand}>
             <div className={styles.logo}>
               <Image
-                  src="/ezlinks-logo@2x.png"
+                  src="/logo/ezlinks.svg"
                   alt='EZLinks logo'
                   height={32}
-                  width={132}
+                  width={150}
                 />
             </div>
             <p className={styles.tagline}>Your OS for User Growth</p>

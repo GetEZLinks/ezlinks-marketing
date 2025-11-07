@@ -11,7 +11,7 @@ const pricingPlans = [
     features: [
       '5k deep links per month',
       'Full-featured link management',
-      'Up to 3 apps',
+      'Up to 3 projects',
       'Complete analytics suite',
       'SDK Access',
       '1 team member (just you)',
@@ -27,7 +27,7 @@ const pricingPlans = [
     period: 'per month',
     features: [
       '50K deep links per month',
-      'Up to 10 apps',
+      'Up to 10 projects',
       'Advanced analytics dashboard',
       'Custom link domains',
       'Basic attribution tracking',

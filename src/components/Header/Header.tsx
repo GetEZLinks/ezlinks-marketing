@@ -20,17 +20,17 @@ export default function Header() {
           <div className={styles.logo}>
             <Link href='/'>
               <Image
-                src='/ezlinks-logo@2x.png'
+                src='/logo/ezlinks.svg'
                 alt="Logo for EZLinks"
-                height={24}
-                width={99}
+                height={32}
+                width={150}
               />
             </Link>
           </div>
           
           <div className={styles.navLinks}>
             <a href="#docs">Documentation</a>
-            <a href="#pricing">Pricing</a>
+            <a href="pricing">Pricing</a>
             <a href="#github">GitHub</a>
             <ThemeToggle />
             <a href="#dashboard" className="btn secondary">Dashboard</a>
