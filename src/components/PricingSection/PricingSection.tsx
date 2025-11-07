@@ -84,9 +84,9 @@ export default function PricingSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              {plan.popular && (
+              {/* {plan.popular && (
                 <div className={styles.popularBadge}>Most Popular</div>
-              )}
+              )} */}
               
               <div className={styles.cardHeader}>
                 <h3 className={styles.planName}>{plan.name}</h3>
@@ -125,7 +125,7 @@ export default function PricingSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p>Need something custom? <a href="#contact">Let&apos;s talk</a></p>
+          <p>Need something custom? <a href="mailto:hi@getezlinks.io">Let&apos;s talk</a></p>
         </motion.div>
       </div>
     </section>
