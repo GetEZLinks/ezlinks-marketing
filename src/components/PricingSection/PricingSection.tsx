@@ -68,7 +68,7 @@ export default function PricingSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className={styles.title}>Simple, transparent pricing</h2>
+          <h1 className={styles.title}>Simple, transparent pricing</h1>
           <p className={styles.subtitle}>
             Start free, scale as you grow. No hidden fees, no surprises.
           </p>
