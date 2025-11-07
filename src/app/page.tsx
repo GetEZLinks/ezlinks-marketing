@@ -31,8 +31,8 @@ export default function Home() {
       <SDKSection />
       <AnalyticsSection />
       <ArchitectureSection />
-      <ScrollingCards />
-      {/* <UseCases /> */}
+      {/* <ScrollingCards />˝ */}
+      <UseCases />  
       {/* <CaseStudySection /> */}
       {/* <AIFeaturesSection /> */}
       <PricingSection />
