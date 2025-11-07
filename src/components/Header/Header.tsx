@@ -29,7 +29,7 @@ export default function Header() {
           </div>
           
           <div className={styles.navLinks}>
-            <a href="#docs">Documentation</a>
+            <a href="#docs">Docs</a>
             <a href="pricing">Pricing</a>
             <a href="#github">GitHub</a>
             <ThemeToggle />
