@@ -4,6 +4,7 @@ import styles from './DeveloperSection.module.scss';
 
 import Image from 'next/image';
 import CheckIcon from '../../../public/icons/checkmark.svg';
+import CodeSnippet from '../CodeSnippet';
 
 const codeExamples = [
   {
@@ -97,9 +98,10 @@ export default function DeveloperSection() {
                     <span></span>
                   </div>
                 </div>
-                <pre className={styles.codeContent}>
-                  <code>{example.code}</code>
-                </pre>
+                
+                  {/* <code>{example.code}</code> */}
+                  <CodeSnippet codeString={example.code}/>
+                {/* </pre> */}
               </div>
             </motion.div>
           ))}

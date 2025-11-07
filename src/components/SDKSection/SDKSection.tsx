@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './SDKSection.module.scss';
+import CodeSnippet from '../CodeSnippet';
 
 type Platform = 'swift' | 'android' | 'react' | 'flutter';
 
@@ -147,9 +148,8 @@ export default function SDKSection() {
                   <span></span>
                 </div>
               </div>
-              <pre className={styles.codeContent}>
-                <code>{codeExamples[activePlatform]}</code>
-              </pre>
+              <CodeSnippet codeString={codeExamples[activePlatform]}/>
+              
             </motion.div>
           </motion.div>
         </div>

@@ -51,7 +51,18 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <CodeSnippet codeString={codeString} />
+        <div className={styles.codeBlock}>
+          <div className={styles.codeHeader}>
+            <div className={styles.codeDots}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          {/* <pre className={styles.codeContent}> */}
+            <CodeSnippet codeString={codeString} />
+          {/* </pre> */}
+        </div>
 
         {/* <motion.div 
           className={styles.dashboardPreview}

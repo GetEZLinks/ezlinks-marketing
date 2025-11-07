@@ -19,9 +19,11 @@
   font-size: 2.5rem;
   // font-weight: 700;
   // color: var(--woodsmoke-950);
+  
   line-height: 1.2;
   margin-bottom: 1.5rem;
   letter-spacing: -1.25px;
+
   @media (max-width: 768px) {
     font-size: 2rem;
   }
@@ -117,6 +119,7 @@
   font-size: 1.05rem;
   font-weight: 700;
   // color: var(--woodsmoke-950);
+  text-decoration:underline;
   margin-top: 0.5rem;
   line-height: 1.8;
 
@@ -133,16 +136,21 @@
 
 .codeBlock {
   background: var(--woodsmoke-950);
-  border-radius: 12px;
+  border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid #97979715;
+  pre {
+    background: transparent !important;
+    font-size: 1rem;
+  }
 }
 
 .codeHeader {
-  background: var(--foreground);
-  background: lightgray;
+  // background: var(--foreground);
+  // background: lightgray;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--woodsmoke-800);
+  // border-bottom: 1px solid var(--woodsmoke-800);
 }
 
 .codeDots {
