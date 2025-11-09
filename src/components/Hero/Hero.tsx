@@ -21,7 +21,7 @@ export default function Hero() {
           className={styles.heroContent}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h1 className={styles.title}>
             Finally,Deep Linking Built for Developers   
@@ -51,18 +51,24 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <div className={styles.codeBlock}>
-          <div className={styles.codeHeader}>
-            <div className={styles.codeDots}>
-              <span></span>
-              <span></span>
-              <span></span>
+         <motion.div 
+          className={styles.heroContent}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+
+          <div className={styles.codeBlock}>
+            <div className={styles.codeHeader}>
+              <div className={styles.codeDots}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-          </div>
-          {/* <pre className={styles.codeContent}> */}
             <CodeSnippet codeString={codeString} />
-          {/* </pre> */}
-        </div>
+          </div>
+        </motion.div>
 
         {/* <motion.div 
           className={styles.dashboardPreview}

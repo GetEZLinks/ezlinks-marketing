@@ -22,7 +22,7 @@ export default function Header() {
               <Image
                 src='/logo/ezlinks.svg'
                 alt="Logo for EZLinks"
-                height={32}
+                height={24}
                 width={150}
               />
             </Link>
