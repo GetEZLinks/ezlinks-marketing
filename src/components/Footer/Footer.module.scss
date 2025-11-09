@@ -68,7 +68,8 @@
     margin: 0;
 
     li {
-      margin-bottom: 6px;
+      margin-bottom: 3px;
+      font-weight: 400;
     }
   }
 
@@ -100,14 +101,14 @@
 }
 
 .copyright {
-  color: var(--woodsmoke-500);
-  font-size: 0.875rem;
+  color: var(--woodsmoke-600);
+  font-size: 13px;
   margin: 0;
 }
 
 .madeWith {
-  color: var(--woodsmoke-500);
-  font-size: 0.875rem;
+  color: var(--woodsmoke-600);
+  font-size: 13px;
 
   @media (max-width: 640px) {
     order: -1;
