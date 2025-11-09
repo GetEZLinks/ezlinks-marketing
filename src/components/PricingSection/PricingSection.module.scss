@@ -17,7 +17,7 @@
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   // font-weight: 700;
   // color: var(--woodsmoke-950);
   line-height: 1.2;
@@ -41,9 +41,9 @@
 
 .pricingGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // gap: 2;
+  max-width: 1340px;
   margin: 0 auto;
 
   @media (max-width: 768px) {
@@ -55,8 +55,9 @@
 .pricingCard {
   // background: var(--bg-primary);
   border: 1px solid #91919150;
-  border-radius: 10px;
-  padding: 2rem;
+  // border-radius: 10px;
+  // padding: 2rem;
+  padding: 2rem 20px;
   position: relative;
   transition: all 0.3s ease;
 
@@ -143,7 +144,7 @@
 
 
 .price {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 800;
   // color: var(--woodsmoke-950);
   letter-spacing: -1.5px;

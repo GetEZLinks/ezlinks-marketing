@@ -45,6 +45,22 @@ const pricingPlans = [
     period: 'per month',
     features: [
       '100K deep links per month',
+      'Unlimited everything',
+      'Complete analytics suite',
+      'SDK Access',
+      'SSO integration',
+      'Custom integrations',
+      'Dedicated support'
+    ],
+    popular: false
+  },
+  {
+    name: 'Enterprise',
+    description: 'For large teams and enterprise needs',
+    price: 'Contact Sales',
+    period: '',
+    features: [
+      '100K deep links per month',
       'Enterprise features',
       'Unlimited everything',
       'Complete analytics suite',
@@ -60,7 +76,7 @@ const pricingPlans = [
 export default function PricingSection() {
   return (
     <section className={styles.pricingSection}>
-      <div className="container">
+      <div className="containe">
         <motion.div 
           className={styles.pricingHeader}
           initial={{ opacity: 0, y: 30 }}
