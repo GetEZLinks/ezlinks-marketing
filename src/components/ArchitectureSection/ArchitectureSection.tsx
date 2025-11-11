@@ -12,7 +12,7 @@ const coreComponents = [
     description: 'Real-time logging for clicks, installs, and app opens. Supports granular event streams with audit-ready integrity.'
   },
   {
-    title: 'Tracking layer',
+    title: 'Tracking Layer',
     description: 'Millisecond-level logs, UTM capture, referrer fingerprinting'
   },
   {
