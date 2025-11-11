@@ -24,11 +24,11 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h1 className={styles.title}>
-            Finally,Deep Linking Built for Developers   
+            The Developer-First Deep Linking Platform
           </h1>
           
           <p className={styles.subtitle}>
-            Transparent pricing and a simple SDK. We&apos;re the modern AI-powered alternative to Branch.
+            Simple SDK, open-core, transparent pricing. The modern alternative to Branch.
           </p>
           
           <div className={styles.cta}>
