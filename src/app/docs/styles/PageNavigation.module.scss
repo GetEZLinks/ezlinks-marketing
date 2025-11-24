@@ -1,0 +1,67 @@
+// app/docs/styles/PageNavigation.module.scss
+
+$primary-purple: #5a31f4;
+$light-purple: #7b5dfa;
+$dark-purple: #4926c4;
+$vibrant-violet: #9d47d2;
+$teal-accent: #2ec4b6;
+$coral-accent: #f05365;
+$dark-text: #333333;
+$background: #f8f9fa;
+
+.pageNavigation {
+  padding: 2rem 1rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 2rem;
+}
+
+.navTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 1rem;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  
+  a {
+    color: $dark-text;
+    text-decoration: none;
+    display: block;
+    padding: 0.25rem 0;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: $primary-purple;
+    }
+  }
+  
+  &.active a {
+    color: $primary-purple;
+    font-weight: 500;
+  }
+  
+  &.subItem {
+    padding-left: 1rem;
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pageNavigation {
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+// app/docs/styles/Search.module.scss
+
+$primary-purple: #5a31f4;
+$light-purple: #7b5dfa;
+$dark-purple: #4926c4;
+$vibrant-violet: #9d47d2;
+$teal-accent: #2ec4b6;
+$coral-accent: #f05365;
+$dark-text: #333333;
+$background: #f8f9fa;
+
+.searchContainer {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.searchForm {
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.625rem 2.5rem 0.625rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  outline: none;
+  transition: all 0.2s ease;
+  
+  &:focus {
+    border-color: $primary-purple;
+    box-shadow: 0 0 0 2px rgba($primary-purple, 0.1);
+  }
+  
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.searchButton {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0;
+  
+  &:hover {
+    color: $primary-purple;
+  }
+}

@@ -1,0 +1,128 @@
+// app/docs/styles/DocPage.module.scss
+
+$primary-purple: #5a31f4;
+$light-purple: #7b5dfa;
+$dark-purple: #4926c4;
+$vibrant-violet: #9d47d2;
+$teal-accent: #2ec4b6;
+$coral-accent: #f05365;
+$dark-text: #333333;
+$background: #f8f9fa;
+
+.docPage {
+  max-width: 100%;
+  
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: $dark-purple;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: $dark-purple;
+  }
+  
+  h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin: 1.75rem 0 0.75rem;
+    color: $dark-text;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    color: rgba($dark-text, 0.85);
+  }
+  
+  pre {
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 16px;
+    overflow: auto;
+    margin: 1.25rem 0;
+    font-size: 0.9rem;
+    
+    code {
+      font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+  
+  code {
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+  }
+  
+  ul, ol {
+    margin: 1.25rem 0;
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  a {
+    color: $primary-purple;
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .introduction {
+    font-size: 1.125rem;
+    color: rgba($dark-text, 0.8);
+    max-width: 700px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  blockquote {
+    border-left: 4px solid $light-purple;
+    padding: 0.75rem 1.25rem;
+    margin: 1.5rem 0;
+    background-color: rgba($light-purple, 0.05);
+    border-radius: 0 4px 4px 0;
+    
+    p {
+      margin-bottom: 0;
+    }
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    th {
+      font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.02);
+    }
+    
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.01);
+    }
+  }
+}
