@@ -11,7 +11,8 @@ export function middleware(request: NextRequest) {
   const docsDomain = 'docs.getezlinks.io';
   // Logic for development (replace 'localhost:3000' with your local address/port)
   // const localDocs = 'localhost:3000';
-
+  console.log('Hostname:', hostname);
+  
   if (hostname === docsDomain) {
     // If accessing docs.domain.com, rewrite the path to start with /docs
     url.pathname = `/docs${url.pathname}`;
