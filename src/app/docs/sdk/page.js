@@ -18,7 +18,7 @@ export default function ApiReferencePage() {
       <h2 id="core-methods">Core Methods</h2>
       
       <h3 id="initialize">initialize</h3>
-      <p>Initializes the EZLinks SDK. This should be called as early as possible in your app's lifecycle.</p>
+      <p>Initializes the EZLinks SDK. This should be called as early as possible in your app&apos;s lifecycle.</p>
       
       <table>
         <thead>
@@ -56,7 +56,7 @@ export default function ApiReferencePage() {
           <tr>
             <td>apiKey</td>
             <td>String</td>
-            <td>Your EZLinks API key from the dashboard</td>
+            <td>Your EZLinks project API key from the dashboard</td>
           </tr>
           <tr>
             <td>context</td>
@@ -137,11 +137,11 @@ export default function ApiReferencePage() {
           </tr>
           <tr>
             <td>Android</td>
-            <td><code>// Automatically handled in initSession</code></td>
+            {/* <td><code>// Automatically handled in initSession</code></td> */}
           </tr>
           <tr>
             <td>Web</td>
-            <td><code>// Automatically handled in init</code></td>
+            {/* <td><code>// Automatically handled in init</code></td> */}
           </tr>
         </tbody>
       </table>
@@ -181,11 +181,11 @@ export default function ApiReferencePage() {
           </tr>
           <tr>
             <td>Android</td>
-            <td><code>// Use initSession with EZLinkReferralInitListener</code></td>
+            {/* <td><code>// Use initSession with EZLinkReferralInitListener</code></td> */}
           </tr>
           <tr>
             <td>Web</td>
-            <td><code>// Use onDeepLinkReceived option in init</code></td>
+            {/* <td><code>// Use onDeepLinkReceived option in init</code></td> */}
           </tr>
         </tbody>
       </table>
