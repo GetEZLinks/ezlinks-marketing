@@ -4,8 +4,8 @@ import Image from 'next/image';
 const footerLinks = {
   Product: [
     // { label: 'Features', href: '#features' },
-    { label: 'Docs', href: 'https://docs.getezlinks.io' },
-    { label: 'SDK', href: 'https://docs.getezlinks.io/sdk' },
+    { label: 'Docs', href: 'docs' },
+    { label: 'SDK', href: 'docs/sdk' },
     { label: 'Demo', href: '#demo' },
     { label: 'Pricing', href: 'pricing' }
   ],
