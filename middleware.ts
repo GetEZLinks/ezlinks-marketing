@@ -8,11 +8,11 @@ export function middleware(request: NextRequest) {
   const hostname = request.headers.get('host');
 
   // Logic for production (replace 'domain.com' with your actual domain)
-  const docsDomain = 'docs.domain.com';
+  const docsDomain = 'docs.getezlinks.io';
   // Logic for development (replace 'localhost:3000' with your local address/port)
-  const localDocs = 'docs.localhost:3000';
+  // const localDocs = 'localhost:3000';
 
-  if (hostname === docsDomain || hostname === localDocs) {
+  if (hostname === docsDomain) {
     // If accessing docs.domain.com, rewrite the path to start with /docs
     url.pathname = `/docs${url.pathname}`;
     return NextResponse.rewrite(url);
