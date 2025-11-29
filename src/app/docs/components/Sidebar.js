@@ -29,7 +29,7 @@ const navItems = [
     section: 'Reference',
     items: [
       // { title: 'SDK Reference', href: '/docs/sdk' },
-      { title: 'API Reference', href: '/docs/api' },
+      { title: 'SDK Reference', href: '/docs/sdk' },
       { title: 'FAQ & Troubleshooting', href: '/docs/faq' },
     ]
   }

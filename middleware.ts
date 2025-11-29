@@ -18,7 +18,6 @@ export function middleware(request: NextRequest) {
     url.pathname = `/docs${url.pathname}`;
     return NextResponse.rewrite(url);
   }
-
   return NextResponse.next();
 }
 

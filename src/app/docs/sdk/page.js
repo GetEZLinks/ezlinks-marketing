@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Complete API reference for EZLinks',
 };
 
-export default function ApiReferencePage() {
+export default function SDKReferencePage() {
   return (
     <div className={styles.docPage}>
       <h1 id="api-reference">SDK Reference</h1>

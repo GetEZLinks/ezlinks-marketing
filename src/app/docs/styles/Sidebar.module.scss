@@ -10,10 +10,10 @@ $dark-text: #333333;
 $background: #f8f9fa;
 
 .sidebar {
-  background-color: white;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $background;
+  border-right: 2px solid rgba(0, 0, 0, 0.04);
   padding: 1.5rem 0;
-  height: 100vh;
+  // height: 100vh;
   overflow-y: auto;
   position: sticky;
   top: 0;

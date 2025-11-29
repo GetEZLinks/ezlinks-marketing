@@ -73,7 +73,7 @@ export default function DocsHomePage() {
         </div>
       </section>
 
-      <section>
+      <section style={{margin: "3rem 0"}}>
         <h2 id="why-ezlinks" className={styles.sectionTitle}>Why EZLinks?</h2>
         <div className={styles.featureGrid}>
           <div className={styles.featureItem}>
@@ -95,7 +95,7 @@ export default function DocsHomePage() {
         </div>
       </section>
 
-      <section>
+      <section style={{margin: "3rem 0"}}>
         <h2 id="getting-help" className={styles.sectionTitle}>Getting Help</h2>
         <p>
           If you need assistance with implementing EZLinks, our support team is here to help. 
