@@ -1,8 +1,12 @@
 // middleware.ts
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+// import { NextResponse } from 'next/server';
+// import type { NextRequest } from 'next/server'; 
+import { MiddlewareRequest, MiddlewareResponse, type NextRequest } from '@netlify/next';
 
-export function middleware(request: NextRequest) {
+export function middleware(nextRequest: NextRequest) {
+
+  const request = new MiddlewareRequest(nextRequest);
+  // ...
   const url = request.nextUrl.clone();
   // Get the hostname (e.g., 'docs.domain.com' or 'localhost:3000')
   const hostname = request.headers.get('host');
@@ -16,9 +20,9 @@ export function middleware(request: NextRequest) {
   if (hostname === docsDomain) {
     // If accessing docs.domain.com, rewrite the path to start with /docs
     url.pathname = `/docs${url.pathname}`;
-    return NextResponse.rewrite(url);
+    return MiddlewareResponse.rewrite(url);
   }
-  return NextResponse.next();
+  return MiddlewareResponse.next();
 }
 
 // Define paths where middleware should run (exclude static assets)
