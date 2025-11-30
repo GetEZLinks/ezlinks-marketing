@@ -1,6 +1,7 @@
 import styles from './Footer.module.scss';
 import Image from 'next/image';
 
+
 const footerLinks = {
   Product: [
     // { label: 'Features', href: '#features' },
