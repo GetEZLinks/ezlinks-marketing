@@ -16,7 +16,7 @@ $background: #f8f9fa;
 }
 
 .card {
-  background-color: white;
+  background-color: $background;
   border-radius: 0.75rem;
   padding: 1.5rem;
   height: 100%;
