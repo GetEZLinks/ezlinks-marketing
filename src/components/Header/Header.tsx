@@ -29,7 +29,7 @@ export default function Header() {
           </div>
           
           <div className={styles.navLinks}>
-            <a href="docs">Docs</a>
+            <a target="_blank" href="https://docs.getezlinks.io">Docs</a>
             <a href="pricing">Pricing</a>
             <a href="#github">GitHub</a>
             <ThemeToggle />

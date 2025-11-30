@@ -4,8 +4,8 @@ import Image from 'next/image';
 const footerLinks = {
   Product: [
     // { label: 'Features', href: '#features' },
-    { label: 'Docs', href: 'docs' },
-    { label: 'SDK', href: 'docs/sdk' },
+    { label: 'Docs', href: 'https://docs.getezlinks.io' },
+    { label: 'SDK', href: 'https://docs.getezlinks.io/docs/sdk' },
     { label: 'Demo', href: '#demo' },
     { label: 'Pricing', href: 'pricing' }
   ],
@@ -47,7 +47,7 @@ export default function Footer() {
                 <ul className={styles.linkList}>
                   {links.map((link) => (
                     <li key={link.label}>
-                      <a href={link.href} className={styles.footerLink}>
+                      <a target='_blank' href={link.href} className={styles.footerLink}>
                         {link.label}
                       </a>
                     </li>
