@@ -4,7 +4,7 @@ import styles from './DeveloperSection.module.scss';
 
 import Image from 'next/image';
 import CheckIcon from '../../../public/icons/checkmark.svg';
-import CodeSnippet from '../CodeSnippet';
+import CodeSnippet from '../CodeSnippet/CodeSnippet';
 
 const codeExamples = [
   {

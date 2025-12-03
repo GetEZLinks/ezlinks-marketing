@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from './SDKSection.module.scss';
-import CodeSnippet from '../CodeSnippet';
+import CodeSnippet from '../CodeSnippet/CodeSnippet';
 
 type Platform = 'swift' | 'android' | 'react' | 'flutter';
 
