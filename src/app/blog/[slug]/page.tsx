@@ -1,10 +1,15 @@
 
 import { client } from '../../../../tina/__generated__/client'
 import PostClient from './post-client'
-
+// 1. Change the type definition to expect a Promise
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 // 1. Define params type (Standard Next.js 14/15)
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const { slug } = params
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
 
   // 2. Fetch data using the specific filename
   const result = await client.queries.post({ relativePath: `${slug}.md` })
