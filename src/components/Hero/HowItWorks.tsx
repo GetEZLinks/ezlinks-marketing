@@ -10,7 +10,7 @@ export default function HowItWorks() {
       description: "Connect your iOS or Android app once. We automatically generate and host the technical files needed for deep linking."
     },
     {
-      icon: '/icons/qr-code.svg',
+      icon: '/icons/deep-links.svg',
       number: "2", 
       title: "Launch Your Links",
       description: "Generate branded short links and downloadable QR codes for any campaign, directly from your dashboard."

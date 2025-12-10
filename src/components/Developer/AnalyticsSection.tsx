@@ -13,22 +13,22 @@ const analyticsFeatures = [
   {
     icon: TimeSeriesIcon,
     title: 'Time-series logging',
-    description: 'Log user events with millisecond accuracy'
+    description: 'Log user events with millisecond accuracy.'
   },
   {
     icon: SourcesIcon,
-    title: 'Source attribution',
-    description: 'Aggregate across campaigns, platforms, and channels'
+    title: 'Conversion tracking',
+    description: 'Aggregate across channels to verify successful hand-offs.'
   },
   {
     icon: DeviceFingerPrintingIcon,
-    title: 'Device fingerprinting',
-    description: 'Experience smarter routing and retention tracking'
+    title: 'Probabilistic matching',
+    description: 'Match clicks to installs using privacy-safe, ephemeral signals.'
   },
   {
     icon: BehaviorCaptureIcon,
-    title: 'Behavior capture',
-    description: 'Easily track CTR, app opens, and conversion trends'
+    title: 'Growth telemetry',
+    description: 'Easily track CTR, app opens, and conversion trends.'
   }
 ];
 

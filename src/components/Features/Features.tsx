@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './Features.module.scss';
 import Image from 'next/image';
 
-import DeepLinksIcon from '../../../public/icons/deep-links.svg';
+// import DeepLinksIcon from '../../../public/icons/deep-links.svg';
 import APIIcon from '../../../public/icons/source-code.svg';
 import AttributionIcon from '../../../public/icons/source-attribution.svg';
 import QRCodeIcon from '../../../public/icons/qr-code.svg';
@@ -13,9 +13,9 @@ import EdgeDeployementIcon from '../../../public/icons/edge-deploy.svg';
 
 const features = [
   {
-    icon: DeepLinksIcon,
-    title: 'Frictionless Deep Linking',
-    description: 'Automatically generate and host your AASA and assetlinks.json files. No manual setup, no server configuration. It just works.'
+    icon: QRCodeIcon,
+    title: 'Smart Routing',
+    description: 'One link that works everywhere. We intelligently route users to the best destination — from the App Store to specific content deep inside your app.'
   },
   {
     icon: APIIcon,
