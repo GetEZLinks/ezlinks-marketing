@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './CTA.module.scss';
-import Link from 'next/link';
 import Image from 'next/image';
 import CheckIcon from '../../../public/icons/checkmark.svg';
 

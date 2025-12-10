@@ -1,4 +1,5 @@
-import { notFound } from 'next/navigation';
+'use client';
+import { notFound , useParams} from 'next/navigation';
 import Link from 'next/link';
 import { blogPosts } from '@/data/blogPosts';
 import styles from './BlogPost.module.scss';
@@ -6,14 +7,14 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
 interface BlogPostPageProps {
-  params: {
-    slug: string;
-  };
+  params: {   
+  slug: string;
+  }
 }
+
 
 const BlogPost = ({ post }: { post: typeof blogPosts[number] }) => {
   
-
   return (
     <article className={styles.blogPost}>
       <div className="container">
@@ -54,8 +55,12 @@ const BlogPost = ({ post }: { post: typeof blogPosts[number] }) => {
   );
 }
 
-const BlogPostPage = ({ params }: BlogPostPageProps) => {
-  const post = blogPosts.find((p) => p.id === params.slug);
+const BlogPostPage = () => {
+  // 2. Call the hook (no async/await needed here)
+  const params = useParams()
+  console.log('BlogPostPage params:', params);
+  // 3. Use the slug immediately
+  const post = blogPosts.find((p) => p.id === params?.slug)
 
   if (!post) {
     notFound();
