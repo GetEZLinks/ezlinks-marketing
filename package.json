@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "sync-schema": "cp -r tina/ ../ezlinks-blog-content-repo/tina/",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true npm run sync-schema && tinacms dev -c \"next dev --turbopack\"",
+    "dev-tina": "TINA_PUBLIC_IS_LOCAL=true npm run sync-schema && tinacms dev -c \"next dev --turbopack\"",
+    "dev": "next dev --turbopack",
     "build": "tinacms build && next build",
     "start": "next start",
     "lint": "next lint"

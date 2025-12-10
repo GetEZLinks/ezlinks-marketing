@@ -41,9 +41,11 @@ export default function QRSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className={styles.qrTitle}>QR Codes and Universal Links</h3>
+            <h3 className={styles.qrTitle}>
+              Create, Test, and Debug in Real-Time
+            </h3>
             <p className={styles.qrDescription}>
-              Generate dynamic QR codes and universal links directly inside your iOS or Android app.
+              Stop flying blind. Generate deep links and QR codes programmatically, then verify their routing logic instantly in our live console—just like testing an API endpoint.
             </p>
             
             <ul className={styles.qrFeatures}>

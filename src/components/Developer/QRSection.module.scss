@@ -6,10 +6,6 @@
     padding: 3rem 0;
   }
 }
-.qrSection :global(.container) {
-    max-width: 1000px;  
-  }
-  
 
 .qrContent {
   display: grid;
@@ -81,7 +77,7 @@
   // background: var(--bg-secondary);
   border-radius: 12px;
   padding: 1.5rem;
-  border: 1px solid #97979730;
+  border: 1px solid #97979775;
   // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
