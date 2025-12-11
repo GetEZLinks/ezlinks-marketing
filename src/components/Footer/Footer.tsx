@@ -12,7 +12,7 @@ const footerLinks = {
   ],
   Company: [
     { label: 'About', href: '#about' },
-    { label: 'Contact', href: 'mailto:hi@getezlinks.io' },
+    { label: 'Contact', href: 'mailto:support@getezlinks.io' },
     { label: 'FAQ', href: '#faq' },
     { label: 'Blog', href: '#blog' }
   ],

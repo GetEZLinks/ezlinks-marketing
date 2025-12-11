@@ -40,13 +40,14 @@
   --image-filter: none;
   // Typography
   // --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  // --font-jetbrains: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
+  --font-jetbrains: 'JetBrains Mono', 'SF Mono', 'Monaco', 'Consolas', monospace;
 }
 
 // Dark mode
 [data-theme="dark"] {
   // --background: #0a0a0a;
   --background: #101218;
+  --background: #1a1a1a;
   --foreground: rgba(255, 255, 255, 1.0);
   --bg-secondary: var(--background);
   
