@@ -49,10 +49,13 @@ export default function QRSection() {
             </p>
             
             <ul className={styles.qrFeatures}>
-              <li>Create links programmatically for campaigns, referrals, or onboarding</li>
+              <li><b>Programmatic Generation:</b> Create dynamic links for millions of users via API.</li>
+              <li><b>Live Validation:</b> Simulate App Not Installed vs App Installed flows before shipping code.</li>
+              <li><b>Real-Time Logs:</b> See every configuration change and link update as it happens in the activity feed.</li>
+              {/* <li>Create links programmatically for campaigns, referrals, or onboarding</li>
               <li>Auto-generate QR codes with custom branding and styles</li>
               <li>Handle deep links natively without complex fallback logic</li>
-              <li>Track scans and opens instantly—no analytics setup required</li>
+              <li>Track scans and opens instantly—no analytics setup required</li> */}
             </ul>
           </motion.div>
 
