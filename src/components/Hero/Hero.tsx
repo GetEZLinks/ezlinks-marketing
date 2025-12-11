@@ -13,6 +13,17 @@ $ ezlinks track --event="app_install" --source="instagram"
 ✓ Event tracked | Attribution: Instagram Story → App Install
 ✓ Revenue impact: $23.50 | ROI: 340%`
 
+const newCodeString = `$ npm install ezlinks-sdk
+> Installing smart routing engine...
+
+$ ezlinks init
+✓ Edge network connected (us-east-1)
+
+$ ezlinks resolve --link "ezl.link/invite"
+✓ Device Match: iOS 17 (Probability: 98%)
+✓ Routing Logic: Web -> App Store -> Deferred Deep Link
+✓ Latency: 124ms | Context Preserved: { promo: "VIP" }`
+
 export default function Hero() {
   return (
     <section className={styles.hero}>
@@ -66,7 +77,7 @@ export default function Hero() {
                 <span></span>
               </div>
             </div>
-            <CodeSnippet codeString={codeString} />
+            <CodeSnippet codeString={newCodeString} />
           </div>
         </motion.div>
 
