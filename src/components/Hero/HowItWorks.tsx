@@ -7,19 +7,19 @@ export default function HowItWorks() {
       icon: '/icons/code-block.svg',
       number: "1",
       title: "Integrate in minutes",
-      description: "Connect your iOS or Android app once. We automatically generate and host the technical files needed for deep linking."
+      description: "A single, lightweight SDK for iOS, Android, and Web. Drop it in once, and we auto-negotiate assetlinks.json and AASA files for you."
     },
     {
       icon: '/icons/deep-links.svg',
       number: "2", 
       title: "Launch Your Links",
-      description: "Generate branded short links and downloadable QR codes for any campaign, directly from your dashboard."
+      description: "Generate dynamic links via API or Dashboard. Our edge network resolves routing logic in <100ms, handling fallback flows automatically."
     },
     {
       icon: '/icons/analytics.svg',
       number: "3",
       title: "Get Clear Insights", 
-      description: "See every click, install, and conversion in real-time with developer-friendly analytics and logs."
+      description: "Trace the user journey from click to conversion. Get real-time logs, probabilistic matching data, and retention cohorts out of the box."
     }
   ];
 
