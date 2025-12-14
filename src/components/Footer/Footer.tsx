@@ -18,9 +18,9 @@ const footerLinks = {
   ],
   Resources: [
     { label: 'Status', href: '#status' },
-    { label: 'DPA', href: '#dpa' },
-    { label: 'Privacy', href: '#privacy' },
-    { label: 'Terms', href: '#terms' }
+    { label: 'DPA', href: 'dpa' },
+    { label: 'Privacy', href: 'privacy' },
+    { label: 'Terms', href: 'terms' }
   ]
 };
 
