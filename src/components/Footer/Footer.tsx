@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss';
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 const footerLinks = {
   Product: [
@@ -48,9 +48,9 @@ export default function Footer() {
                 <ul className={styles.linkList}>
                   {links.map((link) => (
                     <li key={link.label}>
-                      <a target='_blank' href={link.href} className={styles.footerLink}>
+                      <Link href={link.href} className={styles.footerLink}>
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
