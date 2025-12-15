@@ -33,7 +33,7 @@ export default function Header() {
             <a href="pricing">Pricing</a>
             <a href="#github">GitHub</a>
             <ThemeToggle />
-            <Link href="https://dash.getezlinks.io" className="btn secondary">Login</Link>
+            <Link target="_blank" href="https://dash.getezlinks.io/auth?mode=login" className="btn secondary">Login</Link>
           </div>
         </nav>
       </div>
