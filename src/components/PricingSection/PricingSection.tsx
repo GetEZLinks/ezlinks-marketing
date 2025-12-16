@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import styles from './PricingSection.module.scss';
+import Link  from 'next/link';
 
 const pricingPlans = [
   {
@@ -113,13 +114,17 @@ export default function PricingSection() {
                   <span className={styles.period}>{plan.period}</span>
                 </div>
                 
-                <motion.button 
-                  className={`btn ${plan.popular ? 'primary' : 'secondary'}`}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  Start Free
-                </motion.button>
+                <Link
+                  target="_blank"
+                  href={`https://dash.getezlinks.io/auth?mode=register&plan=${plan.name.toLowerCase()}`}>    
+                  <motion.button 
+                    className={`btn ${plan.popular ? 'primary' : 'secondary'}`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                      {plan.name === 'Indie' ? 'Get Started' : 'Start 30 day Free Trial'}
+                  </motion.button>
+                </Link>
               </div>
 
               <div className={styles.featuresList}>
