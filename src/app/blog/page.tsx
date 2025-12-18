@@ -1,81 +1,38 @@
-import Link from 'next/link';
-// import { blogPosts } from '@/data/blogPosts';
-import styles from './BlogPage.module.scss';
-import Header from '@/components/Header/Header';
-import Footer from '@/components/Footer/Footer';
-import { client } from '../../../tina/__generated__/client' 
-// import { BlogPost, BloPost } from '../../../types/blog';
-import { Post } from '../../../tina/__generated__/types';
-import { TinaMarkdown } from 'tinacms/dist/rich-text';
+// import Layout from '@/components/layout/layout';
 
+import client from '@/tina/__generated__/client';
+import PostsClientPage from './client-page';
+import Layout from '../layout';
 
-const Blog = async () => {
-  const response = await client.queries.postConnection();
-  const posts = response.data.postConnection.edges
-    ?.map(edge => edge?.node);
-  
-    // .filter((post): post is Post => post !== null && post !== undefined)
-  console.log('Fetched posts:', posts);
+export const revalidate = 300;
 
-  if (!posts || posts.length === 0) {
-    return <p>No blog posts found.</p>;
+export default async function PostsPage() {
+  let posts = await client.queries.postConnection({
+    sort: 'date',
+    last: 1
+  });
+  const allPosts = posts;
+
+  if (!allPosts.data.postConnection.edges) {
+    return [];
+  }
+
+  while (posts.data?.postConnection.pageInfo.hasPreviousPage) {
+    posts = await client.queries.postConnection({
+      sort: 'date',
+      before: posts.data.postConnection.pageInfo.endCursor,
+    });
+
+    if (!posts.data.postConnection.edges) {
+      break;
+    }
+
+    allPosts.data.postConnection.edges.push(...posts.data.postConnection.edges.reverse());
   }
 
   return (
-    <div className={styles.blogPage}>
-      <div className="container">
-        <div className={styles.header}>
-          <h1>Blog</h1>
-          <p>Thoughts on AI, product validation, and building faster</p>
-        </div>
-        
-        <div className={styles.postsGrid}>
-          {posts?.map((post) => (
-            <article key={post?.id} className={styles.postCard}>
-              <div className={styles.postMeta}>
-                {/* <span className={styles.category}>{post?.category}</span> */}
-                {/* <span className={styles.readTime}>{post?.readTime}</span> */}
-              </div>
-              
-              <h2 className={styles.postTitle}>
-                <Link href={`/blog/${post?.id}`}>
-                  {post?.title}
-                </Link>
-              </h2>
-              
-              <p className={styles.postDescription}>
-                <TinaMarkdown content={post?.body} />
-              </p>
-              
-              <div className={styles.postFooter}>
-                <time className={styles.date}>
-                  {/* {new Date(post?.date).toLocaleDateString('en-US', {
-                    month: 'long',
-                    day: 'numeric',
-                    year: 'numeric'
-                  })} */}
-                </time>
-                {/* <Link href={`/blog/${post?.id}`} className={styles.readMore}> */}
-                <Link href={`/blog/${post?._sys.filename}`} className={styles.readMore}>
-                  Read more →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </div>
+    // <Layout rawPageData={allPosts.data}>
+      <PostsClientPage {...allPosts} />
+    // </Layout>
   );
 }
-
-const BlogPage = () => {
-  return (
-    <main>
-      <Header />
-      <Blog />   
-      <Footer />
-    </main>
-  )
-}
-
-export default BlogPage;
