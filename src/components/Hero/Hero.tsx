@@ -5,13 +5,13 @@ import styles from './Hero.module.scss';
 import HowItWorks from './HowItWorks';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
 
-const codeString = `$ npm install ezlinks-sdk
-✓ Installing attribution without the bloat...
-$ ezlinks init
-✓ SDK initialized - tracking ready in 30 seconds
-$ ezlinks track --event="app_install" --source="instagram"
-✓ Event tracked | Attribution: Instagram Story → App Install
-✓ Revenue impact: $23.50 | ROI: 340%`
+// const codeString = `$ npm install ezlinks-sdk
+// ✓ Installing attribution without the bloat...
+// $ ezlinks init
+// ✓ SDK initialized - tracking ready in 30 seconds
+// $ ezlinks track --event="app_install" --source="instagram"
+// ✓ Event tracked | Attribution: Instagram Story → App Install
+// ✓ Revenue impact: $23.50 | ROI: 340%`
 
 const newCodeString = `$ npm install ezlinks-sdk
 > Installing smart routing engine...

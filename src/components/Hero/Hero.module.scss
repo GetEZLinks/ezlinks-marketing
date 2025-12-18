@@ -22,10 +22,15 @@
     border-radius: 12px;
     font-family: var(--font-jetbrains) !important;
     text-align: center !important;
-    // background-color: var(--background) !important;
-    
+    background-color: var(--background) !important;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+      font-family: var(--font-jetbrains),'Courier New', Courier, monospace !important; /* Replace 'Courier New' with your desired font */
   }
 }
+
 
 .heroContent {
   text-align: center;
