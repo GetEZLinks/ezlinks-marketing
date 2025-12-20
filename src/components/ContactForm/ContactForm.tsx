@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { validateEmail } from '@/lib/utils';
+// import { validateEmail } from '@/lib/utils';
 import styles from './ContactForm.module.scss';
 import Link from 'next/link';
 import {  LinkIcon } from 'lucide-react';
@@ -36,7 +36,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/.netlify/functions/waitlist', {
+      const response = await fetch('/.netlify/functions/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ const ContactForm = () => {
               <label htmlFor="firstName">First Name *</label>
               <input
                 type="text"
-                id="firstName"
+                name="firstName"
                 required
                 value={formData.firstName}
                 onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
