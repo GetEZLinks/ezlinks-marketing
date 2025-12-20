@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styles from './Hero.module.scss';
 import HowItWorks from './HowItWorks';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
+import Link from 'next/link';
 
 // const codeString = `$ npm install ezlinks-sdk
 // ✓ Installing attribution without the bloat...
@@ -39,25 +40,26 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            Simple SDK, open-core, transparent pricing. The modern alternative to Branch.
+            Blazing-fast deferred deep links, QR codes, and attributionout-of-the-box, with transparent pricing.
           </p>
           
           <div className={styles.cta}>
             <motion.a 
-              href="https://forms.gle/orDx5bQKBtFKHSHJ8" 
-              className="btn primary"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Start Linking - Free
-            </motion.a>
-            <motion.a 
-              href="https://forms.gle/orDx5bQKBtFKHSHJ8" 
+              href="/demo" 
               className="btn secondary"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Demo
+              Book a Demo
+            </motion.a>
+            
+            <motion.a 
+              href="/login?mode=register" 
+              className="btn primary"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Start Free
             </motion.a>
           </div>
         </motion.div>
