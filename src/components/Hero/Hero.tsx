@@ -54,7 +54,7 @@ export default function Hero() {
             </motion.a>
             
             <motion.a 
-              href="/login?mode=register" 
+              href="https://dash.getezlinks.io/auth?mode=register&plan=indie" 
               className="btn primary"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

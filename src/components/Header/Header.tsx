@@ -29,11 +29,12 @@ export default function Header() {
           </div>
           
           <div className={styles.navLinks}>
-            <a target="_blank" href="https://docs.getezlinks.io">Docs</a>
             <a href="pricing">Pricing</a>
+            <a target="_blank" href="https://docs.getezlinks.io">Docs</a>
             <a href="#github">GitHub</a>
             <ThemeToggle />
-            <Link target="_blank" href="https://dash.getezlinks.io/auth?mode=login" className="btn primary">Login</Link>
+            {/* <Link target="_blank" href="https://dash.getezlinks.io/auth?mode=login" className="btn secondary">Login</Link> */}
+            <Link target="_blank" href="https://dash.getezlinks.io/auth?mode=register&plan=indie" className="btn primary">Start Free</Link>
           </div>
         </nav>
       </div>
