@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import styles from './Hero.module.scss';
 import HowItWorks from './HowItWorks';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
-import Link from 'next/link';
+
 
 // const codeString = `$ npm install ezlinks-sdk
 // ✓ Installing attribution without the bloat...

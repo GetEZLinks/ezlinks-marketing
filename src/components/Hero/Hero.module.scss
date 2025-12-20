@@ -27,6 +27,7 @@
 
   code[class*="language-"],
   pre[class*="language-"] {
+    
       font-family: var(--font-jetbrains),'Courier New', Courier, monospace !important; /* Replace 'Courier New' with your desired font */
   }
 }
@@ -156,6 +157,12 @@
   pre {
     background: transparent !important;
     font-size: 1rem;
+  }
+  @media (max-width: 640px) {
+    max-width: 90vw !important;
+    pre {
+      font-size: 0.8rem;
+    }
   }
 }
 
