@@ -15,6 +15,7 @@ import ArchitectureSection from '@/components/ArchitectureSection/ArchitectureSe
 import AIFeaturesSection from '@/components/AIFeatures/AIFeaturesSection';
 // import ScrollingCards from '@/components/ScrollingCards/ScrollingCards';
 import UseCases from '@/components/UseCases/UseCases';
+import ContactForm from '@/components/ContactForm/ContactForm';
 // import UseCases from '@/components/UseCases/UseCases';
 
 
@@ -34,7 +35,8 @@ export default function Home() {
       <UseCases />  
       {/* <CaseStudySection /> */}
       <AIFeaturesSection />
-      <CTA />
+      <ContactForm />
+      {/* <CTA /> */}
       <Footer/>
     </main>
   );
