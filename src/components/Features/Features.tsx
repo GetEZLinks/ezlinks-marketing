@@ -62,10 +62,10 @@ export default function Features() {
         >
           <p className={styles.sectionLabel}>FEATURES</p>
           <h2 className={styles.title}>
-            Fast Launches and Real Growth
+            Fast Launches and Real Growth for 3x higher app engagement.
           </h2>
           <p className={styles.subtitle}>
-            With EZLinks, we are creating attribution tracking with an unrivalled developer experience. EZLinks is optimized for simplicity, speed, and getting real insights.
+            With EZLinks, we are creating attribution tracking with an unrivaled developer experience. Optimized for simplicity, speed, and actionable insights.
           </p>
         </motion.div>
 
