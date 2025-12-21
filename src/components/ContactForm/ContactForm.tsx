@@ -58,20 +58,8 @@ const ContactForm = () => {
     }
 };
 
-  if (isSubmitted) {
-    return (
-      <section id="waitlist" className={styles.waitlist}>
-        <div className="container">
-          <div className={styles.successMessage}>
-            <h2>🎉 You&apos;re on the list!</h2>
-            <p>We&apos;ll be in touch soon with early access. In the meantime, tell your friends about ksandra.ai!</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   return (
+
     <section id="waitlist" className={styles.contactForm}>
       <div className="container">
         <div className={styles.content}>
@@ -90,6 +78,13 @@ const ContactForm = () => {
           </div>
           
           <form onSubmit={handleSubmit} className={styles.form}>
+            {isSubmitted && (
+              <div className={styles.formAlert}>
+                <p>
+                  🚀 Email sent. Someone from our team will reach out to you soon.
+                </p>
+              </div>
+            )}
             <div className={styles.formGroup}>
               <label htmlFor="firstName">First Name *</label>
               <input
