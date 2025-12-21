@@ -45,7 +45,7 @@ export default function Hero() {
           
           <div className={styles.cta}>
             <motion.a 
-              href="/demo" 
+              href="/contact/#demo" 
               className="btn secondary"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

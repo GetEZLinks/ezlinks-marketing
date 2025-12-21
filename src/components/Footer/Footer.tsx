@@ -5,16 +5,16 @@ import Link from 'next/link';
 const footerLinks = {
   Product: [
     // { label: 'Features', href: '#features' },
+    { label: 'Pricing', href: 'pricing' },
     { label: 'Docs', href: 'https://docs.getezlinks.io' },
     { label: 'SDK', href: 'https://docs.getezlinks.io/sdk' },
-    { label: 'Demo', href: '#demo' },
-    { label: 'Pricing', href: 'pricing' }
+    // { label: 'Demo', href: '#demo' },
   ],
   Company: [
     { label: 'About', href: '#about' },
-    { label: 'Contact', href: 'mailto:support@getezlinks.io' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Blog', href: '#blog' }
+    { label: 'Contact', href: '/contact' },
+    { label: 'FAQ', href: '/contact/#faq' },
+    // { label: 'Blog', href: '#blog' }
   ],
   Resources: [
     { label: 'Status', href: '#status' },

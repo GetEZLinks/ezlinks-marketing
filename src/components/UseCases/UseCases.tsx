@@ -157,7 +157,7 @@ const UseCases: React.FC = () => {
     <section className={styles.useCases}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Use cases for EZLinks</h2>
+          <h2 className={styles.title}>Explore our use cases</h2>
           <div className={styles.controls}>
             <button 
               onClick={() => scroll('left')}

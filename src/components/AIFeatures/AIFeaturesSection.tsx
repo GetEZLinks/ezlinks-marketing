@@ -16,7 +16,7 @@ const aiFeatures = [
   },
   {
     icon: VersionedLinks,
-    title: 'Link Versioning',
+    title: 'Versioned Deep Links',
     description: 'Proper version control for links with rollback capabilities'
   },
   {
