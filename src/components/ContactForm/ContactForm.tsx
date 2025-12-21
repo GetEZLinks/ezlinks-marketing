@@ -60,7 +60,7 @@ const ContactForm = () => {
 
   return (
 
-    <section id="waitlist" className={styles.contactForm}>
+    <section id="contact" className={styles.contactForm}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.text}>
