@@ -119,18 +119,14 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            Blazing-fast deep links with out-of-the-box attribution and transparent pricing.
+            Blazing-fast deep links with out-of-the-box attribution, and transparent pricing.
           </p>          
+          <CTA />
         </motion.div>
 
-        <CTA />
         <HeroImg />
         {/* <CodeBlock />     */}
-
-
-        
         <HowItWorks />
-
       </div>
     </section>
   );
