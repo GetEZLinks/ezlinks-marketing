@@ -10,7 +10,9 @@ interface PricingTier {
   credits: string;
   support: string;
   coreFeatures: string;
+  attribution: string;
   advancedFeatures: string;
+  domainStyle: string;
   cta: string;
   security: string;
   costPerLink: string;
@@ -22,21 +24,25 @@ const PricingGrid: React.FC = () => {
       name: 'Indie',
       price: 'Free forever',
       bestFor: 'For solo devs and early MVPs.',
-      credits: '50,000 links/clicks',
+      credits: '50,000',
       support: 'Email support',
-      coreFeatures: 'Hosted Dashboard, Unlimited Sources',
+      coreFeatures: 'Deferred deep links, shortlinks, QR codes, 1 team member, iOS/Android SDKs',
+      domainStyle: 'Standard ezl.link subdomain',
+      attribution: 'Basic Attribution (source)',
       advancedFeatures: '-',
       security: 'HIPAA',
       costPerLink: '~$1.00',
-      cta: 'Get Started',
+      cta: 'Start Free',
     },
     {
       name: 'Starter',
       price: '$99 /mo',
       bestFor: 'For shipping MVPs and small teams.',
-      credits: '100,000 links/clicks',
+      credits: '100,000',
       support: 'Email support',
-      coreFeatures: 'Hosted Dashboard, Unlimited Sources',
+      coreFeatures: 'Everything in Indie + Branded Links, 5 team members',
+      domainStyle: 'Custom subdomains (links.nike.com)',
+      attribution: 'Basic Attribution (source)',
       advancedFeatures: '-',
       security: 'HIPAA',
       costPerLink: '~$1.00',
@@ -46,9 +52,11 @@ const PricingGrid: React.FC = () => {
       name: 'Growth',
       price: '$265/mo (yr - $199/mo)',
       bestFor: 'Growing teams & agencies',
-      credits: '250,000 links/clicks',
+      credits: '250,000',
       support: 'Priority Email',
-      coreFeatures: 'Everything in Starter',
+      coreFeatures: 'Everything in Starter, 10 team members, Webhooks, Full (campaigns) Attribution, SDKs for iOS/Android/Web',
+      domainStyle: 'Custom subdomains',
+      attribution: 'Full Attribution (campaigns)',
       advancedFeatures: '+ 90-day Data Retention',
       security: 'HIPAA',
       costPerLink: '~$0.40',
@@ -58,9 +66,11 @@ const PricingGrid: React.FC = () => {
       name: 'Scale',
       price: '$499 /mo',
       bestFor: 'Scaling startups & enterprises',
-      credits: '500,000 links/clicks',
+      credits: '500,000',
       support: '24/7 Slack Support',
-      coreFeatures: 'Everything in Growth',
+      coreFeatures: 'Everything in Growth, Unlimited team members, Custom integrations',
+      domainStyle: 'Vanity domains (nike.swoosh)',
+      attribution: 'Full Attribution (campaigns + user journey + data exports)',
       advancedFeatures: '+ SSO (SAML), Custom SLAs+ Advanced Analytics Dashboards',
       security: 'HIPAA, SOC2',
       costPerLink: '~$0.20',
@@ -71,9 +81,11 @@ const PricingGrid: React.FC = () => {
   const features = [
     { label: 'Price', key: 'price' },
     { label: 'Best for', key: 'bestFor' },
-    { label: 'Volume credits per month', key: 'credits' },
+    { label: 'Volume credits', key: 'credits' },
     { label: 'Support', key: 'support' },
     { label: 'Core Features', key: 'coreFeatures' },
+    { label: 'Domain Style', key: 'domainStyle' },
+    { label: 'Attribution', key: 'attribution' },
     { label: 'Advanced Features', key: 'advancedFeatures' },
     { label: 'Security', key: 'security' },
     { label: 'Cost per 1k Links', key: 'costPerLink' },
