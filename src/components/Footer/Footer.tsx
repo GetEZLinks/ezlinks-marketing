@@ -5,22 +5,22 @@ import Link from 'next/link';
 const footerLinks = {
   Product: [
     // { label: 'Features', href: '#features' },
-    { label: 'Pricing', href: 'pricing' },
-    { label: 'Docs', href: 'https://docs.getezlinks.io' },
-    { label: 'SDK', href: 'https://docs.getezlinks.io/sdk' },
+    { label: 'Pricing', href: 'pricing', target: '' },
+    { label: 'Docs', href: 'https://docs.getezlinks.io', target: '_blank' },
+    { label: 'SDK', href: 'https://docs.getezlinks.io/sdk', target: '_blank' },
     // { label: 'Demo', href: '#demo' },
   ],
   Company: [
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '/contact' },
-    { label: 'FAQ', href: '/contact/#faq' },
+    { label: 'About', href: '#about', target: '' },
+    { label: 'Contact', href: '/contact', target: '' },
+    { label: 'FAQ', href: '/contact/#faq', target: '' },
     // { label: 'Blog', href: '#blog' }
   ],
   Resources: [
-    { label: 'Status', href: '#status' },
-    { label: 'DPA', href: 'dpa' },
-    { label: 'Privacy', href: 'privacy' },
-    { label: 'Terms', href: 'terms' }
+    { label: 'Status', href: '#status', target: '' },
+    { label: 'DPA', href: 'dpa', target: '' },
+    { label: 'Privacy', href: 'privacy', target: '' },
+    { label: 'Terms', href: 'terms', target: '' }
   ]
 };
 
@@ -48,7 +48,7 @@ export default function Footer() {
                 <ul className={styles.linkList}>
                   {links.map((link) => (
                     <li key={link.label}>
-                      <Link href={link.href} className={styles.footerLink}>
+                      <Link target={link.target} href={link.href} className={styles.footerLink}>
                         {link.label}
                       </Link>
                     </li>

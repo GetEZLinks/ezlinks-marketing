@@ -121,7 +121,7 @@ const ContactForm = () => {
             </div>
             
             <div className={styles.formGroup}>
-              <label htmlFor="company">Company</label>
+              <label htmlFor="company">Company or App Name</label>
               <input
                 type="text"
                 id="company"
