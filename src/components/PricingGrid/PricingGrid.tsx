@@ -43,7 +43,7 @@ const PricingGrid: React.FC = () => {
       coreFeatures: 'Everything in Indie + Branded Links, 5 team members',
       domainStyle: 'Custom subdomains (links.nike.com)',
       attribution: 'Basic Attribution (source)',
-      advancedFeatures: '-',
+      advancedFeatures: '30-day Data Retention',
       security: 'HIPAA',
       costPerLink: '~$1.00',
       cta: 'Start Free Trial'
@@ -71,8 +71,8 @@ const PricingGrid: React.FC = () => {
       coreFeatures: 'Everything in Growth, Unlimited team members, Custom integrations',
       domainStyle: 'Vanity domains (nike.swoosh)',
       attribution: 'Full Attribution (campaigns + user journey + data exports)',
-      advancedFeatures: '+ SSO (SAML), Custom SLAs+ Advanced Analytics Dashboards',
-      security: 'HIPAA, SOC2',
+      advancedFeatures: '+ SSO (SAML), Advanced Analytics Dashboards',
+      security: 'HIPAA',
       costPerLink: '~$0.20',
       cta: 'Start Free Trial',
     }
