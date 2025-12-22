@@ -50,7 +50,7 @@ const PricingGrid: React.FC = () => {
     },
     {
       name: 'Growth',
-      price: '$265 /mo (yr - $199 /mo)',
+      price: '$265 /mo ($199 /mo - yrly)',
       bestFor: 'Growing teams & agencies',
       credits: '250,000',
       coreFeatures: 'Everything in Starter, 10 team members, Webhooks, Full (campaigns) Attribution, SDKs for iOS/Android/Web',
