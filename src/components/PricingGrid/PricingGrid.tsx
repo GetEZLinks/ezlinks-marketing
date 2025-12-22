@@ -44,7 +44,7 @@ const PricingGrid: React.FC = () => {
     },
     {
       name: 'Growth',
-      price: '$265 /yr ($199 /mo)',
+      price: '$265/mo (yr - $199/mo)',
       bestFor: 'Growing teams & agencies',
       credits: '250,000 links/clicks',
       support: 'Priority Email',
