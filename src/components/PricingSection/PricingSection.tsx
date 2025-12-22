@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import styles from './PricingSection.module.scss';
 import Link  from 'next/link';
 
+import PricingGrid from '../PricingGrid/PricingGrid';
 const pricingPlans = [
   {
     name: 'Indie',
@@ -77,7 +78,6 @@ const pricingPlans = [
 export default function PricingSection() {
   return (
     <section className={styles.pricingSection}>
-      <div className="containe">
         <motion.div 
           className={styles.pricingHeader}
           initial={{ opacity: 0, y: 30 }}
@@ -91,7 +91,9 @@ export default function PricingSection() {
           </p>
         </motion.div>
 
-        <div className={styles.pricingGrid}>
+      <PricingGrid />
+
+        <div className={styles.pricingGrid} style={{display: "none"}}>
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -146,9 +148,8 @@ export default function PricingSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p>Need something custom? <a href="mailto:sales@getezlinks.io">Let&apos;s talk</a></p>
+          <p>Need SLAs, security reviews, or annual contracts? <a href="mailto:support@getezlinks.io">Let&apos;s talk</a></p>
         </motion.div>
-      </div>
     </section>
   );
 }

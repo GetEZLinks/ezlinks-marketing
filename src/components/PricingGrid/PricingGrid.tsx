@@ -1,0 +1,125 @@
+// PricingGrid.tsx
+import React from 'react';
+import styles from './PricingGrid.module.scss';
+
+interface PricingTier {
+  name: string;
+  price: string;
+  bestFor: string;
+  credits: string;
+  support: string;
+  coreFeatures: string;
+  advancedFeatures: string;
+  cta: string;
+  security: string;
+  costPerLink: string;
+}
+
+const PricingGrid: React.FC = () => {
+  const tiers: PricingTier[] = [
+    {
+      name: 'Indie',
+      price: 'Free forever',
+      bestFor: 'For solo devs and early MVPs.',
+      credits: '50,000 links/clicks',
+      support: 'Email support',
+      coreFeatures: 'Hosted Dashboard, Unlimited Sources',
+      advancedFeatures: '-',
+      security: 'HIPAA',
+      costPerLink: '~$1.00',
+      cta: 'Get Started',
+    },
+    {
+      name: 'Starter',
+      price: '$99 /mo',
+      bestFor: 'For shipping MVPs and small teams.',
+      credits: '100,000 links/clicks',
+      support: 'Email support',
+      coreFeatures: 'Hosted Dashboard, Unlimited Sources',
+      advancedFeatures: '-',
+      security: 'HIPAA',
+      costPerLink: '~$1.00',
+      cta: 'Start Free Trial'
+    },
+    {
+      name: 'Growth',
+      price: '$265 /yr ($199 /mo)',
+      bestFor: 'Growing teams & agencies',
+      credits: '250,000 links/clicks',
+      support: 'Priority Email',
+      coreFeatures: 'Everything in Starter',
+      advancedFeatures: '+ 90-day Data Retention',
+      security: 'HIPAA',
+      costPerLink: '~$0.40',
+      cta: 'Start Free Trial',
+    },
+    {
+      name: 'Scale',
+      price: '$499 /mo',
+      bestFor: 'Scaling startups & enterprises',
+      credits: '500,000 links/clicks',
+      support: '24/7 Slack Support',
+      coreFeatures: 'Everything in Growth',
+      advancedFeatures: '+ SSO (SAML), Custom SLAs+ Advanced Analytics Dashboards',
+      security: 'HIPAA, SOC2',
+      costPerLink: '~$0.20',
+      cta: 'Start Free Trial',
+    }
+  ];
+
+  const features = [
+    { label: 'Price', key: 'price' },
+    { label: 'Best for', key: 'bestFor' },
+    { label: 'Volume credits per month', key: 'credits' },
+    { label: 'Support', key: 'support' },
+    { label: 'Core Features', key: 'coreFeatures' },
+    { label: 'Advanced Features', key: 'advancedFeatures' },
+    { label: 'Security', key: 'security' },
+    { label: 'Cost per 1k Links', key: 'costPerLink' },
+    { label: '', key: 'cta' },
+  ];
+
+  return (
+    <div className={styles.pricingContainer}>
+      <div className={styles.pricingGrid}>
+        {/* Header Row */}
+        <div className={styles.headerRow}>
+          <div className={styles.featureCell}></div>
+          {tiers.map((tier) => (
+            <div key={tier.name} className={styles.tierHeader}>
+              <h2>{tier.name}</h2>
+            </div>
+          ))}
+        </div>
+
+        {/* Feature Rows */}
+        {features.map((feature) => (
+          <div key={feature.key} className={styles.featureRow}>
+            <div className={styles.featureLabel}>
+              {feature.label}
+            </div>
+            {tiers.map((tier) => (
+              <div key={`${tier.name}-${feature.key}`} className={styles.tierCell}>
+                {feature.key === 'price' && (
+                  <div className={styles.price}>{tier[feature.key as keyof PricingTier]}</div>
+                )}
+                {feature.key === 'cta' && (
+                  <button className={styles.ctaButton}>
+                     {tier[feature.key as keyof PricingTier]} 
+                  </button>
+                )}
+                {feature.key !== 'price' && feature.key !== 'cta' && (
+                  <div className={styles.cellContent}>
+                    {tier[feature.key as keyof PricingTier]}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PricingGrid;

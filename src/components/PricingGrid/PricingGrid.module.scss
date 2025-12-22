@@ -1,0 +1,228 @@
+// PricingGrid.module.scss
+.pricingContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.pricingGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 200px repeat(4, 1fr);
+  background: #ffffff;
+  border-bottom: 2px solid #e5e7eb;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 150px repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.featureCell {
+  padding: 1.5rem 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.tierHeader {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-left: 1px solid #e5e7eb;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 1rem 0.5rem;
+    
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.featureRow {
+  display: grid;
+  grid-template-columns: 200px repeat(4, 1fr);
+  border-bottom: 1px solid #e5e7eb;
+
+  &:nth-child(odd) {
+    background: #f9fafb;
+  }
+
+  &:nth-child(even) {
+    background: #ffffff;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 150px repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+}
+
+.featureLabel {
+  padding: 1.25rem 1rem;
+  font-weight: 600;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+
+  @media (max-width: 1024px) {
+    padding: 1rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    background: #1f2937;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.tierCell {
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-left: 1px solid #e5e7eb;
+
+  @media (max-width: 1024px) {
+    padding: 1rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    border-left: none;
+    border-top: 1px solid #e5e7eb;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 1rem;
+
+    &::before {
+      content: attr(data-tier);
+      font-weight: 600;
+      margin-right: 0.5rem;
+      color: #6b7280;
+    }
+  }
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
+}
+
+.cellContent {
+  color: #4b5563;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+
+  @media (max-width: 1024px) {
+    font-size: 0.875rem;
+  }
+}
+
+.ctaButton {
+  padding: 0.75rem 1.5rem;
+  background: #ffffff;
+  border: 2px solid #111827;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+
+  &:hover {
+    background: #111827;
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+// Mobile-specific tier cards
+@media (max-width: 768px) {
+  .pricingGrid {
+    gap: 1.5rem;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .featureRow {
+    display: flex;
+    flex-direction: column;
+    
+    .featureLabel {
+      order: -1;
+    }
+
+    .tierCell {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 1rem;
+      align-items: center;
+
+      &::before {
+        content: '';
+      }
+    }
+  }
+
+  // Create card layout for mobile
+  .tierCell:nth-child(2)::before { content: 'Indie:'; }
+  .tierCell:nth-child(3)::before { content: 'Starter:'; }
+  .tierCell:nth-child(4)::before { content: 'Growth:'; }
+  .tierCell:nth-child(5)::before { content: 'Pro:'; }
+}
