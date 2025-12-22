@@ -25,12 +25,12 @@ const PricingGrid: React.FC = () => {
       price: 'Free forever',
       bestFor: 'For solo devs and early MVPs.',
       credits: '50,000',
-      support: 'Email support',
       coreFeatures: 'Deferred deep links, shortlinks, QR codes, 1 team member, iOS/Android SDKs',
       domainStyle: 'Standard ezl.link subdomain',
       attribution: 'Basic Attribution (source)',
       advancedFeatures: '-',
       security: 'HIPAA',
+      support: 'Email support',
       costPerLink: '~$1.00',
       cta: 'Start Free',
     },
@@ -39,26 +39,26 @@ const PricingGrid: React.FC = () => {
       price: '$99 /mo',
       bestFor: 'For shipping MVPs and small teams.',
       credits: '100,000',
-      support: 'Email support',
       coreFeatures: 'Everything in Indie + Branded Links, 5 team members',
       domainStyle: 'Custom subdomains (links.nike.com)',
       attribution: 'Basic Attribution (source)',
       advancedFeatures: '30-day Data Retention',
       security: 'HIPAA',
+      support: 'Email support',
       costPerLink: '~$1.00',
       cta: 'Start Free Trial'
     },
     {
       name: 'Growth',
-      price: '$265/mo (yr - $199/mo)',
+      price: '$265 /mo (yr - $199 /mo)',
       bestFor: 'Growing teams & agencies',
       credits: '250,000',
-      support: 'Priority Email',
       coreFeatures: 'Everything in Starter, 10 team members, Webhooks, Full (campaigns) Attribution, SDKs for iOS/Android/Web',
       domainStyle: 'Custom subdomains',
       attribution: 'Full Attribution (campaigns)',
       advancedFeatures: '+ 90-day Data Retention',
       security: 'HIPAA',
+      support: 'Priority Email',
       costPerLink: '~$0.40',
       cta: 'Start Free Trial',
     },
@@ -67,12 +67,12 @@ const PricingGrid: React.FC = () => {
       price: '$499 /mo',
       bestFor: 'Scaling startups & enterprises',
       credits: '500,000',
-      support: '24/7 Slack Support',
       coreFeatures: 'Everything in Growth, Unlimited team members, Custom integrations',
       domainStyle: 'Vanity domains (nike.swoosh)',
       attribution: 'Full Attribution (campaigns + user journey + data exports)',
       advancedFeatures: '+ SSO (SAML), Advanced Analytics Dashboards',
       security: 'HIPAA',
+      support: '24/7 Slack Support',
       costPerLink: '~$0.20',
       cta: 'Start Free Trial',
     }
@@ -82,12 +82,12 @@ const PricingGrid: React.FC = () => {
     { label: 'Price', key: 'price' },
     { label: 'Best for', key: 'bestFor' },
     { label: 'Volume credits', key: 'credits' },
-    { label: 'Support', key: 'support' },
     { label: 'Core Features', key: 'coreFeatures' },
-    { label: 'Domain Style', key: 'domainStyle' },
     { label: 'Attribution', key: 'attribution' },
+    { label: 'Domain Style', key: 'domainStyle' },
     { label: 'Advanced Features', key: 'advancedFeatures' },
     { label: 'Security', key: 'security' },
+    { label: 'Support', key: 'support' },
     { label: 'Cost per 1k Links', key: 'costPerLink' },
     { label: '', key: 'cta' },
   ];
@@ -109,7 +109,7 @@ const PricingGrid: React.FC = () => {
         {features.map((feature) => (
           <div key={feature.key} className={styles.featureRow}>
             <div className={styles.featureLabel}>
-              {feature.label}
+              <b>{feature.label}</b>
             </div>
             {tiers.map((tier) => (
               <div key={`${tier.name}-${feature.key}`} className={styles.tierCell}>
