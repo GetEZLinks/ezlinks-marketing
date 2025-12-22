@@ -7,7 +7,7 @@ export default function HowItWorks() {
       icon: '/icons/code-block.svg',
       number: "1",
       title: "Integrate in minutes",
-      description: "A single, lightweight SDK for iOS, Android, and Web. Drop it in once, and we auto-negotiate assetlinks.json and AASA files for you."
+      description: "A single, lightweight SDK for iOS, Android, and Web. Drop it once, and we dynamically serve the AAS and assetlinks files for you."
     },
     {
       icon: '/icons/deep-links.svg',
@@ -25,7 +25,7 @@ export default function HowItWorks() {
 
   return (
     <section className={styles.section}>
-      <h3 className={styles.title}>How It Works</h3>
+      <h4 className={styles.title}>How It Works</h4>
       <div className={styles.grid}>
         {steps.map((step) => (
           <div key={step.number} className={styles.card}>
