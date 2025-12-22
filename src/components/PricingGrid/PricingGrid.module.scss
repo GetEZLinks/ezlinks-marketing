@@ -4,14 +4,14 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 .pricingGrid {
   display: flex;
   flex-direction: column;
   gap: 0;
-  background: #ffffff;
+  // background: #ffffff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -20,7 +20,7 @@
 .headerRow {
   display: grid;
   grid-template-columns: 200px repeat(4, 1fr);
-  background: #ffffff;
+  // background: #ffffff;
   border-bottom: 2px solid #e5e7eb;
 
   @media (max-width: 1024px) {
@@ -35,7 +35,7 @@
 .featureCell {
   padding: 1.5rem 1rem;
   font-weight: 600;
-  color: #111827;
+  color: var(--foreground);
 }
 
 .tierHeader {
@@ -47,7 +47,7 @@
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #111827;
+    // color: #111827;
   }
 
   @media (max-width: 1024px) {
@@ -65,11 +65,11 @@
   border-bottom: 1px solid #e5e7eb;
 
   &:nth-child(odd) {
-    background: #f9fafb;
+    // background: #f9fafb;
   }
 
   &:nth-child(even) {
-    background: #ffffff;
+    // background: #ffffff;
   }
 
   &:last-child {
@@ -92,10 +92,10 @@
 .featureLabel {
   padding: 1.25rem 1rem;
   font-weight: 600;
-  color: #374151;
+  // color: #374151;
   display: flex;
   align-items: center;
-  background: #f3f4f6;
+  // background: #f3f4f6;
 
   @media (max-width: 1024px) {
     padding: 1rem 0.75rem;
@@ -104,7 +104,7 @@
 
   @media (max-width: 768px) {
     background: #1f2937;
-    color: #ffffff;
+    // color: #ffffff;
     padding: 1rem;
     font-size: 1rem;
   }
@@ -142,7 +142,7 @@
 .price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #111827;
+  // color: #111827;
 
   @media (max-width: 1024px) {
     font-size: 1rem;
@@ -150,7 +150,7 @@
 }
 
 .cellContent {
-  color: #4b5563;
+  // color: #4b5563;
   line-height: 1.5;
   font-size: 0.9375rem;
 
@@ -161,19 +161,19 @@
 
 .ctaButton {
   padding: 0.75rem 1.5rem;
-  background: #ffffff;
-  border: 2px solid #111827;
+  background: var(--background);
+  border: 2px solid var(--foreground);
   border-radius: 6px;
   font-weight: 600;
-  color: #111827;
+  color: var(--foreground);
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9375rem;
   white-space: nowrap;
 
   &:hover {
-    background: #111827;
-    color: #ffffff;
+    // background: #111827;
+    // color: #ffffff;
     transform: translateY(-1px);
   }
 

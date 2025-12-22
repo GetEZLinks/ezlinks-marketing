@@ -1,6 +1,7 @@
 // PricingGrid.tsx
 import React from 'react';
 import styles from './PricingGrid.module.scss';
+import Link from 'next/link';
 
 interface PricingTier {
   name: string;
@@ -104,9 +105,15 @@ const PricingGrid: React.FC = () => {
                   <div className={styles.price}>{tier[feature.key as keyof PricingTier]}</div>
                 )}
                 {feature.key === 'cta' && (
+                  <Link
+                    href={`https://dash.getezlinks.io/auth?mode=register&plan=${tier.name.toLowerCase()}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  > 
                   <button className={styles.ctaButton}>
                      {tier[feature.key as keyof PricingTier]} 
-                  </button>
+                    </button>
+                  </Link>
                 )}
                 {feature.key !== 'price' && feature.key !== 'cta' && (
                   <div className={styles.cellContent}>
