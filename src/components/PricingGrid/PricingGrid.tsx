@@ -122,7 +122,7 @@ const PricingGrid: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   > 
-                  <button className={styles.ctaButton}>
+                  <button className="btn primary">
                      {tier[feature.key as keyof PricingTier]} 
                     </button>
                   </Link>
