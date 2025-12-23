@@ -88,7 +88,7 @@ const PricingGrid: React.FC = () => {
     { label: 'Advanced Features', key: 'advancedFeatures' },
     { label: 'Security', key: 'security' },
     { label: 'Support', key: 'support' },
-    { label: 'Cost per 1k Links', key: 'costPerLink' },
+    // { label: 'Cost per 1k Links', key: 'costPerLink' },
     { label: '', key: 'cta' },
   ];
 
