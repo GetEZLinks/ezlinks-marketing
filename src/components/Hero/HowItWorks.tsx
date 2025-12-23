@@ -19,7 +19,7 @@ export default function HowItWorks() {
       icon: '/icons/analytics.svg',
       number: "3",
       title: "Get Clear Insights", 
-      description: "Trace the user journey from click to conversion. Get real-time logs, probabilistic matching data, and retention cohorts out of the box."
+      description: "Trace the user journey from click to conversion. Get real- time logs, probabilistic matching data, and sources data out of the box."
     }
   ];
 
