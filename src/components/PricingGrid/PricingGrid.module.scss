@@ -12,16 +12,17 @@
   flex-direction: column;
   gap: 0;
   // background: #ffffff;
-  border-radius: 8px;
+  // border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
 }
 
 .headerRow {
   display: grid;
   grid-template-columns: 200px repeat(4, 1fr);
   // background: #ffffff;
-  border-bottom: 2px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
 
   @media (max-width: 1024px) {
     grid-template-columns: 150px repeat(4, 1fr);
@@ -113,7 +114,7 @@
 }
 
 .tierCell {
-  padding: 1.25rem 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +148,7 @@
   // color: #111827;
 
   @media (max-width: 1024px) {
-    // font-size: 1rem;
+    font-size: 1rem;
   }
 }
 

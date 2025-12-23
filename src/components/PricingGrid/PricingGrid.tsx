@@ -14,7 +14,7 @@ interface PricingTier {
   advancedFeatures: string;
   domainStyle: string;
   cta: string;
-  security: string;
+  compliance: string;
   costPerLink: string;
 }
 
@@ -29,7 +29,7 @@ const PricingGrid: React.FC = () => {
       domainStyle: 'Standard ezl.link subdomain',
       attribution: 'Basic Attribution (source)',
       advancedFeatures: '-',
-      security: 'HIPAA',
+      compliance: 'HIPAA',
       support: 'Email support',
       costPerLink: '~$1.00',
       cta: 'Start Free',
@@ -43,7 +43,7 @@ const PricingGrid: React.FC = () => {
       domainStyle: 'Custom subdomains (links.nike.com)',
       attribution: 'Basic Attribution (source)',
       advancedFeatures: '30-day Data Retention',
-      security: 'HIPAA',
+      compliance: 'HIPAA',
       support: 'Email support',
       costPerLink: '~$1.00',
       cta: 'Start Free Trial'
@@ -57,7 +57,7 @@ const PricingGrid: React.FC = () => {
       domainStyle: 'Custom subdomains',
       attribution: 'Full Attribution (campaigns)',
       advancedFeatures: '+ 90-day Data Retention',
-      security: 'HIPAA',
+      compliance: 'HIPAA',
       support: 'Priority Email',
       costPerLink: '~$0.40',
       cta: 'Start Free Trial',
@@ -71,7 +71,7 @@ const PricingGrid: React.FC = () => {
       domainStyle: 'Vanity domains (nike.swoosh)',
       attribution: 'Full Attribution (campaigns + user journey + data exports)',
       advancedFeatures: '+ SSO (SAML), Advanced Analytics Dashboards',
-      security: 'HIPAA',
+      compliance: 'HIPAA',
       support: '24/7 Slack Support',
       costPerLink: '~$0.20',
       cta: 'Start Free Trial',
@@ -86,7 +86,7 @@ const PricingGrid: React.FC = () => {
     { label: 'Attribution', key: 'attribution' },
     { label: 'Domain Style', key: 'domainStyle' },
     { label: 'Advanced Features', key: 'advancedFeatures' },
-    { label: 'Security', key: 'security' },
+    { label: 'Compliance', key: 'compliance' },
     { label: 'Support', key: 'support' },
     // { label: 'Cost per 1k Links', key: 'costPerLink' },
     { label: '', key: 'cta' },
