@@ -1,7 +1,9 @@
+
+
 .contactForm {
   padding: 10rem 0;
   // border-top: 1px solid #97979715;
-  background: #fafafafe;
+  // background: #fafafafe;
 
   @media (max-width: 480px) {
     padding: 3rem 0;
@@ -32,7 +34,7 @@
     font-weight: 300;
     margin-bottom: 1rem;
     // font-family: var(--pt-serif);
-    color: #1a1a1a;
+    // color: #1a1a1a;
     
     @media (max-width: 768px) {
       font-size: 2rem;
@@ -81,7 +83,7 @@
     input, select {
       width: 100%;
       padding: 0.75rem 1rem;
-      border: 1px solid var(--border-gray);
+      border: 1px solid var(--foreground);
       // border-radius: 3prem;
       font-size: 1rem;
       background: transparent !important;
