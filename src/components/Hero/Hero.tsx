@@ -6,13 +6,13 @@ import HowItWorks from './HowItWorks';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
 import Image from 'next/image';
 
-// const codeString = `$ npm install ezlinks-sdk
-// ✓ Installing attribution without the bloat...
-// $ ezlinks init
-// ✓ SDK initialized - tracking ready in 30 seconds
-// $ ezlinks track --event="app_install" --source="instagram"
-// ✓ Event tracked | Attribution: Instagram Story → App Install
-// ✓ Revenue impact: $23.50 | ROI: 340%`
+const codeString = `$ npm install ezlinks-sdk
+✓ Installing attribution without the bloat...
+$ ezlinks init
+✓ SDK initialized - tracking ready in 30 seconds
+$ ezlinks track --event="app_install" --source="instagram"
+✓ Event tracked | Attribution: Instagram Story → App Install
+✓ Revenue impact: $23.50 | ROI: 340%`
 
 const newCodeString = `$ npm install ezlinks-sdk
 > Installing smart routing engine...
@@ -85,12 +85,13 @@ export default function Hero() {
     return (
       <div className={styles.cta}>
       <motion.a 
-        href="/contact/#demo" 
+        href="https://docs.getezlinks.io"
+        target='_blank'  
         className="btn secondary"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
-        Book a Demo
+        Read the Docs
       </motion.a>
       
       <motion.a 
@@ -99,7 +100,7 @@ export default function Hero() {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
       >
-        Start Free
+        Start Linking
       </motion.a>
       </div>
     )
@@ -115,17 +116,20 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <h1 className={styles.title}>
-            The Developer-First Deep Linking Platform
+            Deep Linking for Builders.
           </h1>
           
           <p className={styles.subtitle}>
-            Blazing-fast deep links with out-of-the-box attribution, and transparent pricing.
+            Blazing-fast deferred deep links, QR codes, and attribution without the enterprise overhead. No sales calls, no hidden pricing.
           </p>          
+          {/* <p className={styles.subtitle}>
+            EZLinks delivers instant attribution and deep linking that just works. Drop in the SDK, test, and ship your app today.
+          </p> */}
           <CTA />
         </motion.div>
 
-        <HeroImg />
-        {/* <CodeBlock />     */}
+        {/* <HeroImg /> */}
+        <CodeBlock />    
         <HowItWorks />
       </div>
     </section>

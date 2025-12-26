@@ -73,7 +73,7 @@ h3 {
   &.primary {
     background: var(--purple-500);
     color: white;
-
+    font-weight: 700;
     &:hover {
       background: var(--purple-600);
       transform: translateY(-1px);
