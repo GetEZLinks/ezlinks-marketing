@@ -7,13 +7,13 @@ export default function HowItWorks() {
       icon: '/icons/code-block.svg',
       number: "1",
       title: "Integrate in minutes",
-      description: "A single, lightweight SDK for iOS, Android, and Web. Drop it once, and we dynamically serve the AAS and assetlinks files for you."
+      description: "Drop in the unified SDK, test, and ship your app today. We dynamically serve the AASA and assetlinks files for you."
     },
     {
       icon: '/icons/deep-links.svg',
       number: "2", 
       title: "Launch Your Links",
-      description: "Generate dynamic links via API or Dashboard. Our edge network resolves routing logic in <100ms, handling fallback flows automatically."
+      description: "Generate smartlinks via API or Dashboard. Our edge network resolves routing logic in <100ms, handling fallback flows automatically."
     },
     {
       icon: '/icons/analytics.svg',
