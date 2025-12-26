@@ -65,7 +65,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-
           <div className={styles.codeBlock}>
             <div className={styles.codeHeader}>
               <div className={styles.codeDots}>
@@ -120,7 +119,7 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            Blazing-fast deferred deep links, QR codes, and attribution without the enterprise overhead. No sales calls, no hidden pricing.
+            Blazing-fast deep links, QR codes, and attribution without the enterprise overhead. No sales calls, no hidden pricing.
           </p>          
           {/* <p className={styles.subtitle}>
             EZLinks delivers instant attribution and deep linking that just works. Drop in the SDK, test, and ship your app today.
