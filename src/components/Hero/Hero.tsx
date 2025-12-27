@@ -119,7 +119,7 @@ export default function Hero() {
           </h1>
           
           <p className={styles.subtitle}>
-            Blazing-fast deep links, QR codes, and attribution without the enterprise overhead. No sales calls, no hidden pricing.
+            Blazing-fast deferred deep links and attribution without the enterprise overhead. No sales calls, no hidden pricing.
           </p>          
           {/* <p className={styles.subtitle}>
             EZLinks delivers instant attribution and deep linking that just works. Drop in the SDK, test, and ship your app today.

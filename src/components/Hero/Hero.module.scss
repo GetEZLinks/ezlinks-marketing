@@ -27,7 +27,9 @@
       text-align: center !important;
       padding-top: 0.5rem !important ;
       font-size: 14px !important;
-      font-family: var(--font-jetbrains) !important
+      font-family: var(--font-jetbrains) !important;
+      margin: 0 !important;
+      background: transparent !important;
   }
 }
 
@@ -155,6 +157,10 @@
   margin: 2rem auto;
   margin-top: 2rem;
   border: 2px solid #97979715;
+
+  pre {
+    margin: 0 !important;
+  }
 }
 
 .codeHeader {
