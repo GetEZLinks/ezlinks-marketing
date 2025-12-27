@@ -6,19 +6,20 @@ import HowItWorks from './HowItWorks';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
 import Image from 'next/image';
 
-const codeString = `$ npm install ezlinks-sdk
-✓ Installing attribution without the bloat...
-$ ezlinks init
-✓ SDK initialized - tracking ready in 30 seconds
-$ ezlinks track --event="app_install" --source="instagram"
-✓ Event tracked | Attribution: Instagram Story → App Install
-✓ Revenue impact: $23.50 | ROI: 340%`
+// const codeString = `$ npm install ezlinks-sdk
+// ✓ Installing attribution without the bloat...
+// $ ezlinks init
+// ✓ SDK initialized - tracking ready in 30 seconds
+// $ ezlinks track --event="app_install" --source="instagram"
+// ✓ Event tracked | Attribution: Instagram Story → App Install
+// ✓ Revenue impact: $23.50 | ROI: 340%`
 
-const newCodeString = `$ npm install ezlinks-sdk
-> Installing smart routing engine...
+const newCodeString = `$ npm install ezlinks
+✓ If you can curl it, you can build it.
 
 $ ezlinks init
-✓ Edge network connected (us-east-1)
+> Verifying API Key... OK
+✓ Region detected: us-east-1 (Latency: 24ms)
 
 $ ezlinks resolve --link "ezl.link/invite"
 ✓ Device Match: iOS 17 (Probability: 98%)
