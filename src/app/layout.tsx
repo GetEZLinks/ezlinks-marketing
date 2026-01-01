@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${jetBrainsMono.variable}`}>
         <ThemeProvider>
           {children}
-          <Script
+          {/* <Script
             id="inline-script-id"
             dangerouslySetInnerHTML={{
               __html: `
@@ -47,7 +47,7 @@ export default function RootLayout({
           <Script
             src="https://ezlinks.netlify.app/scripts/banner.js"
             strategy="afterInteractive"
-          />
+          /> */}
         </ThemeProvider>
       </body>
     </html>

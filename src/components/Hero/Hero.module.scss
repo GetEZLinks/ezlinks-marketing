@@ -161,6 +161,10 @@
   pre {
     margin: 0 !important;
   }
+
+  @media (max-width: 480px) {
+    max-width: 90vw;
+  }
 }
 
 .codeHeader {
