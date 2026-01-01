@@ -47,7 +47,7 @@ export default function RootLayout({
             }}
           />
           <Script
-            src="https://ezlinks.netlify.app/banner.js"
+            src="https://ezlinks.netlify.app/scripts/banner.js"
             strategy="afterInteractive"
           />
         </ThemeProvider>
