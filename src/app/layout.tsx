@@ -35,13 +35,11 @@ export default function RootLayout({
             id="inline-script-id"
             dangerouslySetInnerHTML={{
               __html: `
-                <script>
                   window.EZLinksConfig = {
                     link: 'https://playsq.ezl.link/',
                     title: 'Use the Amtrak app for a better travel experience',
                     icon: 'https://ezlinks.netlify.app/app-icon.png'
-                  };
-                </script>
+                  };          
                 console.log('Hello from inline script!');
               `,
             }}

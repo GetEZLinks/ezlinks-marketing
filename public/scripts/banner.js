@@ -3,6 +3,7 @@
   
   // Config (set by customer)
   const config = window.EZLinksConfig || {};
+  console.log('EZLinks Banner Config:', config);
   
   // Only run on mobile
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -33,7 +34,14 @@
           left: 0;
           right: 0;
           z-index: 2147483647;
-          background: #fff;
+          background: #eee;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+          transform: translateY(-100%);
+          transition: transform 0.3s ease;
           /* ... all styles inline to avoid conflicts ... */
         }
       </style>
