@@ -5,13 +5,14 @@ import Image from 'next/image';
 import styles from './SDKSection.module.scss';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
 
-type Platform = 'swift' | 'android' | 'react' | 'flutter';
+type Platform = 'swift' | 'android' | 'react' | 'flutter' | 'web';
 
 const platforms: Array<{id: Platform, label: string, icon: string}> = [
   { id: 'swift', label: 'Swift', icon: '🍎' },
   { id: 'android', label: 'Android', icon: '🤖' },
   { id: 'react', label: 'React Native', icon: '⚛️' },
-  { id: 'flutter', label: 'Flutter', icon: '🦄' }
+  { id: 'flutter', label: 'Flutter', icon: '🦄' },
+  { id: 'web', label: 'Web', icon: '🌐' }
 ];
 
 const codeExamples: Record<Platform, string> = {
@@ -60,7 +61,14 @@ void main() async {
   );
   
   runApp(MyApp());
-}`
+}` ,
+  web: `import EZLinks from '@ezlinks/web-sdk';
+EZLinks.init({ apiKey: 'key' });
+
+const link = await EZLinks.createLink({
+  path: '/products/12345',
+  params: { productId: '12345' }
+});`
 };
 
 export default function SDKSection() {
@@ -76,13 +84,6 @@ export default function SDKSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          {/* <p className={styles.sectionLabel}>CLIENT SDK</p> */}
-          <div className={styles.platformIcons}>
-            <span>🤖</span>
-            <span>🍎</span>
-            <span>⚛️</span>
-            <span>🦄</span>
-          </div>
         </motion.div>
 
         <div className={styles.sdkContent}>
