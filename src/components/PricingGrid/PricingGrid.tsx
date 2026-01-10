@@ -28,7 +28,7 @@ const PricingGrid: React.FC = () => {
       coreFeatures: 'Deferred deep links, shortlinks, QR codes, 1 team member, iOS/Android SDKs',
       domainStyle: 'Standard ezl.link subdomain',
       attribution: 'Basic Attribution (source)',
-      advancedFeatures: '-',
+      advancedFeatures: '14-day Data Retention',
       compliance: 'HIPAA',
       support: 'Email support',
       costPerLink: '~$1.00',
@@ -46,11 +46,11 @@ const PricingGrid: React.FC = () => {
       compliance: 'HIPAA',
       support: 'Email support',
       costPerLink: '~$1.00',
-      cta: 'Start Free Trial'
+      cta: 'Start 30-day Trial'
     },
     {
       name: 'Growth',
-      price: '$265 /mo ($199 /mo - yrly)',
+      price: '$199 /mo (yrly) or $265 /mo',
       bestFor: 'Growing teams & agencies',
       credits: '250,000',
       coreFeatures: 'Everything in Starter, 10 team members, Webhooks, Full (campaigns) Attribution, SDKs for iOS/Android/Web',
@@ -60,7 +60,7 @@ const PricingGrid: React.FC = () => {
       compliance: 'HIPAA',
       support: 'Priority Email',
       costPerLink: '~$0.40',
-      cta: 'Start Free Trial',
+      cta: 'Start 30-day Trial',
     },
     {
       name: 'Scale',
@@ -74,7 +74,7 @@ const PricingGrid: React.FC = () => {
       compliance: 'HIPAA',
       support: '24/7 Slack Support',
       costPerLink: '~$0.20',
-      cta: 'Start Free Trial',
+      cta: 'Start 30-day Trial',
     }
   ];
 
@@ -88,7 +88,7 @@ const PricingGrid: React.FC = () => {
     { label: 'Advanced Features', key: 'advancedFeatures' },
     { label: 'Compliance', key: 'compliance' },
     { label: 'Support', key: 'support' },
-    // { label: 'Cost per 1k Links', key: 'costPerLink' },
+    { label: 'Cost per 1k Links', key: 'costPerLink' },
     { label: '', key: 'cta' },
   ];
 

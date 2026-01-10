@@ -74,7 +74,7 @@
     label {
       display: inline-flex;
       font-weight: 600;
-      // margin-bottom: 4px;
+      margin-bottom: 4px;
       // color: var(--text-primary);
       // opacity: 50%;
       font-size: 12px;
@@ -87,8 +87,8 @@
       // border-radius: 3prem;
       font-size: 1rem;
       background: transparent !important;
-      border: 1px solid rgba(0,0,0,0.1);
-      color: #222;
+      border: 1px solid #97979750;
+      color: var(--foreground)  ;
       &:focus {
         outline: none;
         border-color: var(--primary-blue);
@@ -103,9 +103,9 @@
       // border-radius: 0.5rem;
       font-size: 1rem;
       background: transparent !important;
-      border: 1px solid rgba(0,0,0,0.1);
+      border: 1px solid #97979750;
       resize: vertical;
-      color: #222;
+      color: var(--foreground);
       &:focus {
         outline: none;
         border-color: var(--primary-blue);

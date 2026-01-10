@@ -15,17 +15,20 @@ const features = [
   {
     icon: QRCodeIcon,
     title: 'Smart Routing',
-    description: 'One link that works everywhere. We intelligently route users to the best destination — from the App Store to specific content deep inside your app.'
+    description: 'One link that works everywhere. We intelligently route users to the best destination\
+     — from the App Store to specific content deep inside your app.'
   },
   {
     icon: APIIcon,
     title: 'One API, Full Stack',
-    description: 'Complete attribution for iOS, Android, and Web. No need to integrate Branch + PostHog + separate attribution service.'
+    description: 'Complete attribution for iOS, Android, and Web. No need to integrate Branch + PostHog + separate\
+     attribution service.'
   },
   {
     icon: AttributionIcon,
     title: 'Real-time Attribution',
-    description: 'Real-time vs batch: See conversions as they happen, not hours later. Make decisions on live data, not yesterday\'s reports'
+    description: 'Real-time vs batch: See conversions as they happen, not hours later. Make decisions\
+     on live data, not yesterday\'s reports'
   },
   // {
   //   icon: AnalyticsIcon,
@@ -34,17 +37,18 @@ const features = [
   // },
   {
     icon: ForeverIcon,
-    title: 'Forever links',
+    title: 'Forever Links',
     description: 'Your deep links work permanently. No link rot, no expired URLs, no broken user experiences.'
   },
   {
     icon: MicroservicesIcon,
-    title: 'Microservices Built to scale',
-    description: 'Modular stack means you only pay for what you use. Add features without rebuilding. Scale components independently.'
+    title: 'Microservices Built to Scale',
+    description: 'Modular stack means you only pay for what you use. Add features without rebuilding.\
+     Scale components independently.'
   },
   {
     icon: EdgeDeployementIcon,
-    title: 'Edge deployment',
+    title: 'Edge Deployment',
     description: 'Edge routing means your users convert before they bounce. Every 100ms delay costs 1% conversion rate.'
   }
 ];
@@ -65,7 +69,8 @@ export default function Features() {
             Fast Launches and Real Growth for 3x higher app engagement.
           </h2>
           <p className={styles.subtitle}>
-            With EZLinks, we are creating attribution tracking with an unrivaled developer experience. Optimized for simplicity, speed, and actionable insights.
+            With EZLinks, we are creating attribution tracking with an unrivaled developer experience.
+            Optimized for simplicity, speed, and actionable insights.
           </p>
         </motion.div>
 

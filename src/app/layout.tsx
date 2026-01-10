@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from '@/hooks/useTheme';
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Geist } from "next/font/google";
 import "../styles/globals.scss";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: 'EZLinks - Deep links made simple.',
@@ -12,6 +11,11 @@ export const metadata: Metadata = {
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
 });
 
@@ -28,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${jetBrainsMono.variable}`}>
+      <body className={`${inter.variable} ${jetBrainsMono.variable} ${geist.variable}`}>
         <ThemeProvider>
           {children}
           {/* <Script
