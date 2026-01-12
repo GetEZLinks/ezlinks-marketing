@@ -63,6 +63,7 @@ void main() async {
   runApp(MyApp());
 }` ,
   web: `import EZLinks from '@ezlinks/web-sdk';
+
 EZLinks.init({ apiKey: 'key' });
 
 const link = await EZLinks.createLink({
@@ -112,7 +113,7 @@ export default function SDKSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className={styles.sectionLabel}>EZSDK</p>
+            {/* <p className={styles.sectionLabel}>EZSDK</p> */}
             <h3 className={styles.sdkTitle}>
               Simple Integration. Powerful SDKs.
             </h3>
